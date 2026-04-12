@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nav-height: 68px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "palt" 1;
+  }
+
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.foreground');
+    font-family: theme('fontFamily.sans');
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p, li, td, th {
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+  }
+}
+
+@layer components {
+  /* Layout */
+  .container-base {
+    @apply w-full max-w-container mx-auto px-6 md:px-10 lg:px-14;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  .section-padding-sm {
+    @apply py-14 md:py-20;
+  }
+
+  /* Typography */
+  .label-text {
+    @apply text-xs font-medium tracking-label uppercase text-muted;
+  }
+
+  .section-title {
+    @apply text-h2 font-bold text-foreground;
+  }
+
+  /* Serif heading */
+  .heading-serif {
+    font-family: var(--font-noto-serif-jp), 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-primary text-white
+           px-7 py-3.5 text-sm font-medium tracking-jp
+           hover:bg-primary-600 transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-foreground text-foreground
+           px-7 py-3.5 text-sm font-medium tracking-jp
+           hover:bg-foreground hover:text-white transition-colors duration-200;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center gap-2 border border-white/60 text-white
+           px-7 py-3.5 text-sm font-medium tracking-jp
+           hover:bg-white/15 transition-colors duration-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-1.5 text-sm font-medium text-primary
+           hover:text-primary-600 transition-colors duration-200;
+  }
+
+  /* Nav */
+  .nav-link {
+    @apply text-sm text-stone-600 hover:text-foreground
+           transition-colors duration-150 tracking-jp;
+  }
+
+  /* Prose for Japanese body text */
+  .prose-jp {
+    @apply text-base text-stone-600 leading-jp tracking-jp max-w-prose-jp;
+  }
+
+  /* Dividers */
+  .section-divider {
+    @apply border-t border-border;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .writing-vertical {
+    writing-mode: vertical-rl;
+  }
+}

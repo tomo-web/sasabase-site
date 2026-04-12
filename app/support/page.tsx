@@ -202,7 +202,7 @@ export default function SupportPage() {
               </h2>
               <div className="space-y-4 text-base text-stone-600 leading-jp tracking-jp">
                 <p>
-                  Terra'Coのように、気軽に関われる場がある一方で、より継続的に関わる形もご用意しています。
+                  Terra&apos;Coのように、気軽に関われる場がある一方で、より継続的に関わる形もご用意しています。
                 </p>
                 <p>
                   学習の時間を一緒につくりながら、保護者の方とも連携し、チームとして関わっていく取り組みです。
@@ -227,7 +227,7 @@ export default function SupportPage() {
               <p className="mt-4 text-xs text-stone-400 leading-jp tracking-jp">
                 Kubiを通じて、
                 <br />
-                離れていてもこの場に"居る"感覚を持ちながら、
+                離れていてもこの場に&ldquo;居る&rdquo;感覚を持ちながら、
                 <br />
                 人とつながることができます。
                 <br />
@@ -301,7 +301,7 @@ export default function SupportPage() {
               </h2>
               <div className="space-y-4 text-base text-stone-600 leading-jp tracking-jp mb-8">
                 <p>
-                  多世代寺子屋「Terra'Co」は、子どもから大人まで、
+                  多世代寺子屋「Terra&apos;Co」は、子どもから大人まで、
                   誰でも立ち寄れる場として毎週水曜日に開かれています。
                 </p>
                 <p>
@@ -314,7 +314,7 @@ export default function SupportPage() {
                 </p>
               </div>
               <Link href="/terraco" className="btn-ghost text-base">
-                Terra'Coについて詳しく →
+                Terra&apos;Coについて詳しく →
               </Link>
             </div>
 
@@ -417,7 +417,7 @@ export default function SupportPage() {
               お問い合わせ・ご相談
             </Link>
             <Link href="/terraco" className="btn-outline-white">
-              Terra'Coを見る →
+              Terra&apos;Coを見る →
             </Link>
           </div>
         </div>

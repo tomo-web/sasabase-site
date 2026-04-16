@@ -30,9 +30,9 @@ export default function AudienceNav() {
       <div className="container-base">
 
         <div className="mb-10">
-          <p className="text-xs font-medium tracking-label text-muted mb-4">ご利用案内</p>
+          <p className="text-xs font-medium tracking-label text-muted mb-4">Sasabaseとの関わり方</p>
           <h2 className="heading-serif text-h2 text-foreground">
-            あなたはどの立場ですか？
+            どんな関わり方をしますか？
           </h2>
         </div>
 

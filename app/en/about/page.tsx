@@ -242,7 +242,7 @@ export default function EnAboutPage() {
             </p>
 
             <p className="text-base text-stone-600 leading-relaxed mx-auto">
-              What LLD is building is a model where learning in a Japanese satoyama
+              What we are building is a model where learning in a Japanese satoyama
               transforms how organisations develop people, expands what children believe is possible,
               and creates new economic forms for regional communities.
               Small experiments. Real change.

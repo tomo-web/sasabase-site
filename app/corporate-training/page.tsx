@@ -429,6 +429,23 @@ export default function CorporateTrainingPage() {
                 </p>
               </div>
 
+              <p className="text-xs text-muted tracking-label uppercase mb-3">実施の目安</p>
+              <div className="grid grid-cols-3 gap-0 divide-x divide-border border border-border bg-white mb-4">
+                {[
+                  { label: '時間', value: '半日〜1日程度' },
+                  { label: '人数', value: '5〜20名' },
+                  { label: '形式', value: '日帰り・宿泊対応可' },
+                ].map((item) => (
+                  <div key={item.label} className="px-5 py-5">
+                    <p className="text-xs text-muted tracking-label uppercase mb-2">{item.label}</p>
+                    <p className="text-sm font-medium text-foreground tracking-jp">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-stone-400 leading-jp tracking-jp mb-10">
+                ※ 内容に応じて個別設計します
+              </p>
+
               <p className="text-xs text-stone-400 leading-jp tracking-jp mb-10">
                 ※ お問い合わせからご連絡いただいた後、オンラインまたは対面での初回相談を設けています。
               </p>

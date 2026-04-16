@@ -4,9 +4,25 @@ import Link from 'next/link'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 
 export const metadata: Metadata = {
-  title: 'Corporate Training — 企業研修',
+  title: '企業研修 | 川西市Sasabaseの体験型研修',
   description:
-    '火を起こし、米を炊く。その体験を通じて、チームの本質が見えてくる。Sasabaseの企業研修は、自然体験ではなく、組織とチームのあり方を問い直す実践の場です。',
+    '火起こし・かまど料理を通じてチームの本質に触れる、川西市の体験型企業研修。自然の中でチームビルディング・リーダーシップを実践的に学びます。大阪から約50分。',
+  keywords: [
+    '企業研修 兵庫',
+    '体験型研修 川西市',
+    'チームビルディング 自然',
+    '社会人学び直し 実践型',
+    '研修 古民家',
+    '里山 企業研修',
+    'チーム研修 大阪近郊',
+  ],
+  openGraph: {
+    title: '企業研修 | 川西市Sasabaseの体験型研修',
+    description:
+      '火起こし・かまど料理を通じたチームビルディング。川西市Sasabaseの体験型企業研修。大阪から約50分。',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 }
 
 const whyKamado = [

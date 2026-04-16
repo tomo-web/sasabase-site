@@ -13,10 +13,20 @@ interface MobileMenuProps {
   isOpen: boolean
   onClose: () => void
   pathname: string
+  isEn?: boolean
+  jpHref?: string
+  enHref?: string
 }
 
-export default function MobileMenu({ items, isOpen, onClose, pathname }: MobileMenuProps) {
-  // Prevent body scroll when menu is open
+export default function MobileMenu({
+  items,
+  isOpen,
+  onClose,
+  pathname,
+  isEn = false,
+  jpHref = '/',
+  enHref = '/en',
+}: MobileMenuProps) {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
@@ -40,10 +50,10 @@ export default function MobileMenu({ items, isOpen, onClose, pathname }: MobileM
         }`}
         role="dialog"
         aria-modal="true"
-        aria-label="ナビゲーション"
+        aria-label={isEn ? 'Navigation' : 'ナビゲーション'}
       >
         <nav className="p-6 flex flex-col gap-1">
-          {items.map((item) => (
+          {items.slice(isEn ? 0 : 1).map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -61,11 +71,36 @@ export default function MobileMenu({ items, isOpen, onClose, pathname }: MobileM
 
         <div className="absolute bottom-8 left-6 right-6">
           <div className="pt-4 border-t border-border">
+            {/* Language switcher */}
+            <div className="flex items-center gap-3 mb-3">
+              <Link
+                href={jpHref}
+                onClick={onClose}
+                className={`text-xs px-2.5 py-1 rounded border transition-colors ${
+                  !isEn
+                    ? 'border-primary text-primary font-semibold bg-primary/5'
+                    : 'border-border text-stone-500 hover:text-foreground'
+                }`}
+              >
+                JP
+              </Link>
+              <Link
+                href={enHref}
+                onClick={onClose}
+                className={`text-xs px-2.5 py-1 rounded border transition-colors ${
+                  isEn
+                    ? 'border-primary text-primary font-semibold bg-primary/5'
+                    : 'border-border text-stone-500 hover:text-foreground'
+                }`}
+              >
+                EN
+              </Link>
+            </div>
             <p className="text-xs text-muted tracking-jp">
               LLD / sasabase.com
             </p>
             <p className="text-xs text-stone-400 tracking-jp mt-0.5">
-              川西市 · 兵庫県
+              Kawanishi · Hyogo, Japan
             </p>
           </div>
         </div>

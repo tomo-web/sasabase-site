@@ -5,8 +5,24 @@ import VisionSection from '@/components/sections/about/VisionSection'
 import FounderSection from '@/components/sections/about/FounderSection'
 
 export const metadata: Metadata = {
-  title: 'コンセプト — Learning & Local Design',
-  description: 'Sasabaseのコンセプト「Learning & Local Design」。地域と教育のつながりをデザインし、川西という場所で実験を続けています。',
+  title: 'コンセプト | Learning & Local Design',
+  description:
+    'Sasabaseのコンセプト「Learning & Local Design」。教育と地域経済をつなぐ視点から、川西市で実践を重ねています。私たちの考え方と活動の背景を紹介します。',
+  keywords: [
+    'Learning Local Design',
+    '地域教育 川西市',
+    '地域とビジネス',
+    '教育 実践 兵庫',
+    '地域づくり 川西',
+    '地域まるごとキャンパス',
+  ],
+  openGraph: {
+    title: 'コンセプト | Learning & Local Design',
+    description:
+      '教育と地域経済をつなぐ「Learning & Local Design」。川西市での実践を通じて、私たちが考える学びのかたちを紹介します。',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 }
 
 const principles = [

@@ -3,9 +3,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "多世代寺子屋 Terra'Co",
+  title: "Terra'Co | 川西市の多世代交流・学び場",
   description:
-    "誰もが先生であり、誰もが生徒である。子どもから大人まで世代を超えて集まる学び合いの場、Terra'Co。毎週水曜日、Sasabaseを開いています。",
+    "川西市Sasabaseで毎週水曜日に開催。子ども・大人・高齢者が集まる多世代の学び場。先生も生徒もなく、日常の中で自然に学び合いが生まれます。居場所としても開いています。",
+  keywords: [
+    '多世代交流 川西市',
+    '地域の学び場 兵庫',
+    '居場所 子ども 兵庫',
+    '寺子屋 川西',
+    'コミュニティ学習',
+    '多世代 スペース',
+    '不登校 居場所',
+  ],
+  openGraph: {
+    title: "Terra'Co | 川西市の多世代交流・学び場",
+    description:
+      "川西市Sasabaseで毎週水曜日に開催。子ども・大人・高齢者が集まる多世代の学び場。先生も生徒もなく、日常の中で自然に学びが生まれます。",
+    locale: 'ja_JP',
+    type: 'website',
+  },
 }
 
 const happenings = [
@@ -153,7 +169,7 @@ export default function TerraCoPage() {
 
           <div className="mb-14">
             <p className="label-text mb-6">この場で起きていること</p>
-            <h2 className="heading-serif text-h2 text-foreground leading-[1.4] whitespace-nowrap">
+            <h2 className="heading-serif text-h2 text-foreground leading-[1.4] text-balance">
               特別なプログラムがあるわけではない。
             </h2>
           </div>

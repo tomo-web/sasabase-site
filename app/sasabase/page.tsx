@@ -3,9 +3,25 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Sasabaseとは',
+  title: 'Sasabaseとは | 川西市の学びの拠点',
   description:
-    '兵庫県川西市の里山を拠点に、地域まるごとキャンパスを実践するSasabaseについて。',
+    '兵庫県川西市の古民家を舞台に、農業・食・地域文化を通じた学びを実践。子どもから大人まで世代を超えてつながる、地域まるごとキャンパスの取り組みを紹介します。',
+  keywords: [
+    'Sasabaseとは',
+    '川西市 学び場',
+    '里山 兵庫',
+    '地域まるごとキャンパス',
+    'Learning Local Design',
+    '古民家 川西市',
+    '地域教育 兵庫',
+  ],
+  openGraph: {
+    title: 'Sasabaseとは | 川西市の学びの拠点',
+    description:
+      '兵庫県川西市の古民家を拠点に、農業・食・地域文化を通じた学びを実践する場。子どもから大人まで、世代を超えてつながります。',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 }
 
 export default function SasabasePage() {

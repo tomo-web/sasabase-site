@@ -4,9 +4,25 @@ import Link from 'next/link'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 
 export const metadata: Metadata = {
-  title: '6次産業スクール',
+  title: '6次産業スクール | 川西市・実践型プログラム',
   description:
-    '生産・加工・販売を一体で学ぶ、実践型の6次産業スクール。里山・棚田というリアルなフィールドで、地域と経済をつなぐ学びを設計します。',
+    '生産・加工・販売を一体で学ぶ、川西市の実践型6次産業スクール。棚田での米づくりから加工・販売まで、地域経済の仕組みを体験を通じて学びます。',
+  keywords: [
+    '6次産業 体験',
+    '農業ビジネス 兵庫',
+    '農業体験 川西市',
+    '地域起業 実践',
+    '6次産業 学び',
+    '社会人 学び直し 実践型',
+    '地域経済 学び',
+  ],
+  openGraph: {
+    title: '6次産業スクール | 川西市・実践型プログラム',
+    description:
+      '棚田での米づくりから加工・販売まで体験する、川西市の実践型6次産業スクール。地域の経済サイクルを体験しながら学びます。',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 }
 
 const flow = [

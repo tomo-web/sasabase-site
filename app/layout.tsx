@@ -20,15 +20,30 @@ const notoSerifJP = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: '地域まるごとキャンパス | Learning & Local Design',
-    template: '%s | LLD',
+    default: 'Sasabase | 川西市の地域まるごとキャンパス',
+    template: '%s | Sasabase',
   },
   description:
-    '教育・地域・ビジネスをつなぐ実験場。兵庫県川西市の古民家を拠点に、地域まるごとキャンパスを実践しています。',
-  keywords: ['Learning & Local Design', 'Sasabase', '川西', '兵庫', '地域教育', '6次産業', '企業研修', '教育支援'],
+    '兵庫県川西市の古民家を拠点にした実践の場。農業体験・多世代交流・不登校支援・企業研修など、教育と地域をつなぐプログラムを運営しています。大阪から約50分。',
+  keywords: [
+    'Sasabase',
+    'Learning & Local Design',
+    '川西市',
+    '兵庫 学び場',
+    '農業体験 兵庫',
+    '古民家体験 川西市',
+    '多世代交流 スペース',
+    '不登校 居場所 兵庫',
+    '6次産業 体験',
+    '企業研修 兵庫',
+    '里山 体験',
+    '地域の学びの場',
+    '社会人 学び直し 実践型',
+  ],
   openGraph: {
-    title: '地域まるごとキャンパス | Learning & Local Design',
-    description: '教育・地域・ビジネスをつなぐ実験場。兵庫県川西市から、新しい学びのかたちを実践しています。',
+    title: 'Sasabase | 川西市の地域まるごとキャンパス',
+    description:
+      '兵庫県川西市の古民家を拠点に、農業体験・多世代交流・不登校支援・企業研修など、教育と地域をつなぐ取り組みを実践しています。',
     locale: 'ja_JP',
     type: 'website',
   },

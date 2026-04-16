@@ -3,9 +3,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '滞在体験',
+  title: '滞在体験 | 川西市Sasabaseの古民家宿泊',
   description:
-    '里山の古民家に泊まる。Sasabaseの滞在体験は、宿泊ではなく「過ごす時間」に価値があります。地域の営みの中に身を置き、静けさと余白のある時間を。',
+    '兵庫県川西市の昭和古民家に泊まる滞在体験。農作業・地域との交流・季節の食を通じ、里山での暮らしに触れる時間を提供します。大阪から約50分。',
+  keywords: [
+    '古民家 体験 川西市',
+    '農業体験 宿泊 兵庫',
+    '里山 滞在',
+    '古民家 宿泊 兵庫',
+    '体験型宿泊',
+    '川西市 宿泊',
+    '里山 古民家',
+  ],
+  openGraph: {
+    title: '滞在体験 | 川西市Sasabaseの古民家宿泊',
+    description:
+      '兵庫県川西市の昭和古民家に泊まる滞在体験。農作業・季節の食・地域交流を通じて、里山での時間を過ごします。大阪から約50分。',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 }
 
 const canDo = [

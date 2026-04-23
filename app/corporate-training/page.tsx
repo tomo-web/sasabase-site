@@ -442,8 +442,12 @@ export default function CorporateTrainingPage() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-stone-400 leading-jp tracking-jp mb-10">
+              <p className="text-xs text-stone-400 leading-jp tracking-jp mb-4">
                 ※ 内容に応じて個別設計します
+              </p>
+              <p className="text-sm text-stone-500 leading-jp tracking-jp mb-10">
+                参考価格：半日 100,000円（5名程度）〜<br />
+                （事前ヒアリング・設計を含みます）
               </p>
 
               <p className="text-xs text-stone-400 leading-jp tracking-jp mb-10">

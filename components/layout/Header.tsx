@@ -19,6 +19,7 @@ const enNavItems = [
   { label: 'Home',        href: '/en' },
   { label: 'About',       href: '/en/about' },
   { label: 'Programs',    href: '/en/experience' },
+  { label: 'Access',      href: '/en/access' },
   { label: 'Contact',     href: '/en/contact' },
 ]
 
@@ -29,6 +30,7 @@ function getCounterpartHref(pathname: string): { jp: string; en: string } {
       '': '/',
       '/about': '/sasabase',
       '/experience': '/#what-we-do',
+      '/access': '/access',
       '/contact': '/contact',
     }
     return { jp: jpMap[sub] ?? '/', en: pathname }
@@ -38,7 +40,7 @@ function getCounterpartHref(pathname: string): { jp: string; en: string } {
     '/sasabase': '/en/about',
     '/concept': '/en/about',
     '/contact': '/en/contact',
-    '/access': '/en',
+    '/access': '/en/access',
     '/archive': '/en',
   }
   return { jp: pathname, en: enMap[pathname] ?? '/en' }

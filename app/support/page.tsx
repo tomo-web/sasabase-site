@@ -258,7 +258,7 @@ export default function SupportPage() {
               <div
                 key={item.number}
                 className={`bg-white border border-border p-8 ${
-                  item.number === '05' ? 'sm:col-span-2 lg:col-span-1' : ''
+                  item.number === '05' ? 'sm:col-span-2 lg:col-span-1 border-l-2 border-l-primary/40' : ''
                 }`}
               >
                 <span className="text-xs font-mono text-stone-300 mb-4 block">
@@ -270,8 +270,48 @@ export default function SupportPage() {
                 <p className="text-sm text-stone-500 leading-jp tracking-jp">
                   {item.body}
                 </p>
+                {item.number === '05' && (
+                  <div className="mt-5 space-y-3 pt-5 border-t border-border">
+                    <p className="text-sm text-stone-500 leading-jp tracking-jp">
+                      すぐに成果を求めるのではなく、<br />
+                      関係性を少しずつ築いていくことを大切にしています。
+                    </p>
+                    <p className="text-sm text-stone-500 leading-jp tracking-jp">
+                      関わり方は一人ひとり異なります。<br />
+                      無理のない形で、続けられる関係を一緒につくっていきます。
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
+
+            {/* ご利用の目安 */}
+            <div className="sm:col-span-2 lg:col-span-1 bg-stone-50 border border-stone-200 p-8 flex flex-col">
+              <p className="text-xs font-medium tracking-label text-muted mb-4">ご利用の目安</p>
+              <p className="text-base font-semibold text-stone-700 leading-jp tracking-jp mb-1">
+                月額 20,000円<span className="text-sm font-normal text-stone-500">（税込）〜</span>
+              </p>
+              <p className="text-xs text-stone-400 leading-jp tracking-jp mb-5">
+                無理なく続けられる形で設計しています。
+              </p>
+              <ul className="flex flex-col gap-2 mb-5">
+                {[
+                  '週1回・60分の個別セッション',
+                  '学生チューターとの継続的な関わり',
+                  '保護者への相談サポート',
+                  'Kubiを使ったリモート参加',
+                  "Terra'Coへの参加・連携",
+                ].map((line) => (
+                  <li key={line} className="flex items-start gap-2.5 text-sm text-stone-500 leading-jp tracking-jp">
+                    <span className="w-1 h-1 rounded-full bg-stone-300 flex-shrink-0 mt-[0.55em]" />
+                    {line}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-stone-400 leading-jp tracking-jp mt-auto">
+                ※ 内容や関わり方に応じて調整します
+              </p>
+            </div>
           </div>
 
         </div>

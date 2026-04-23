@@ -91,7 +91,7 @@ export default function EnContactPage() {
                     { icon: '🌱', label: 'Programs & Learning', href: '/en/experience#learn' },
                     { icon: '🏡', label: 'Farm Stay & Visits', href: '/en/experience#stay' },
                     { icon: '🤝', label: 'Corporate Training', href: '/en/experience#create' },
-                    { icon: '📍', label: 'Access & Getting Here', href: '/access' },
+                    { icon: '📍', label: 'Access & Getting Here', href: '/en/access' },
                   ].map((item) => (
                     <Link
                       key={item.label}
@@ -130,7 +130,7 @@ export default function EnContactPage() {
                 <p className="text-sm text-stone-600 leading-relaxed">
                   ~50 min from Osaka (Hankyu line) · 3 min walk from Sasabe Station.
                 </p>
-                <Link href="/access" className="text-xs text-primary hover:opacity-70 transition-opacity mt-3 inline-block">
+                <Link href="/en/access" className="text-xs text-primary hover:opacity-70 transition-opacity mt-3 inline-block">
                   Full directions →
                 </Link>
               </div>

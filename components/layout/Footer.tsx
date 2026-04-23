@@ -25,6 +25,7 @@ const enSiteNav = [
   { label: 'Home',      href: '/en' },
   { label: 'About',     href: '/en/about' },
   { label: 'Programs',  href: '/en/experience' },
+  { label: 'Access',    href: '/en/access' },
   { label: 'Contact',   href: '/en/contact' },
 ]
 

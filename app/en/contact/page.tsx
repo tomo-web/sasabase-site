@@ -88,9 +88,9 @@ export default function EnContactPage() {
                 </h2>
                 <div className="space-y-3">
                   {[
-                    { icon: '🌱', label: 'Programs & Learning', href: '/en/experience#learn' },
-                    { icon: '🏡', label: 'Farm Stay & Visits', href: '/en/experience#stay' },
-                    { icon: '🤝', label: 'Corporate Training', href: '/en/experience#create' },
+                    { icon: '🌱', label: 'Programs & Learning', href: '/en/experience' },
+                    { icon: '🏡', label: 'Farm Stay & Visits', href: '/en/experience#international' },
+                    { icon: '🤝', label: 'Corporate Training', href: '/en/experience#organisations' },
                     { icon: '📍', label: 'Access & Getting Here', href: '/en/access' },
                   ].map((item) => (
                     <Link

@@ -5,57 +5,50 @@ const items = [
     number: '01',
     title: "多世代寺子屋 Terra'Co",
     description:
-      '子どもから大人まで、世代を超えて集まる学びの場。誰もが先生で誰もが生徒、たくさんの知恵や経験を分かち合いながら、日常の中で自然に学びが生まれる居場所をつくっています。',
+      '子どもから大人まで、世代を超えて集まる学びの場。毎週水曜日に開催。合宿や多田の市への出店など、関連する取り組みも紹介しています。',
     href: '/terraco',
   },
   {
     number: '02',
-    title: '不登校支援・テレポート学習',
+    title: '音とご飯の会',
     description:
-      '学校以外の学びの選択肢として、テレポートロボットを通じてSasabaseの場に遠隔参加できる仕組みを提供。安心できる環境の中で、自分のペースで学びや人とのつながりを育みます。',
-    href: '/support',
+      '食を通じた触れ合いイベント。料理を一緒につくり、音楽を聴きながら囲む時間が、世代や背景を超えたつながりを生みます。',
+    href: '/oto-gohan',
   },
   {
     number: '03',
     title: '6次産業スクール',
     description:
-      '米づくりから加工・販売まで、地域の営みを丸ごと体験する実践型プログラム。生産とビジネスを一体で学びながら、地域資源の価値を自らの手で形にしていきます。',
+      '笹部の棚田での米づくりを出発点に、加工・販売までの取り組みを実践します。地域の現場で学ぶ一連のプロセスが、地域経済とつながります。',
     href: '/6th-sector',
   },
   {
     number: '04',
-    title: '企業研修',
+    title: '笹米クラブ',
     description:
-      '里山の暮らしや文化をフィールドにした体験型研修。対話と実践を通じて、チームやリーダーシップのあり方を問い直し、新たな視点と関係性を育みます。',
-    href: '/corporate-training',
-  },
-  {
-    number: '05',
-    title: '滞在体験',
-    description:
-      '里山の暮らしに触れながら、地域の日常を体験する民泊プログラム。農や食、人との関わりを通じて、都市では得られない学びと気づきを育みます。',
-    href: '/stay',
+      '米づくりと笹部の景観維持に継続的に関わる、Sasabaseのサポータークラブ。棚田の一年を地域の人と一緒に歩みます。',
+    href: '/sasamai-club',
   },
 ]
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" className="section-padding bg-stone-50 border-t border-border">
+    <section id="what-we-do" className="py-10 md:py-14 lg:py-20 bg-stone-50 border-t border-border">
       <div className="container-base">
 
-        <div className="mb-12 md:mb-16">
-          <p className="text-xs font-medium tracking-label text-muted mb-4">取り組み</p>
+        <div className="mb-5 md:mb-8">
+          <p className="text-xs font-medium tracking-label text-muted mb-4">活動</p>
           <h2 className="heading-serif text-h2 text-foreground">
-            Sasabaseでできること
+            Sasabaseの4つの活動
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 [&>*:last-child]:sm:col-span-2 [&>*:last-child]:lg:col-span-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {items.map((item) => (
             <Link
               key={item.number}
               href={item.href}
-              className="group bg-white border border-border p-8 hover:border-primary/30 hover:shadow-sm transition-all duration-300 flex flex-col"
+              className="group bg-white border border-border p-6 hover:border-primary/30 hover:shadow-sm transition-all duration-300 flex flex-col"
             >
               <span className="text-xs font-mono text-stone-300 mb-4 block">
                 {item.number}

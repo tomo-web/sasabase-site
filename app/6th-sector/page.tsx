@@ -30,19 +30,19 @@ const flow = [
     number: '01',
     phase: '生産',
     title: '土づくり・米づくり',
-    body: '棚田の土を耕し、苗を植え、水を管理し、秋に収穫する。この一連の営みを通じて、農業の現実と、食を生み出すことの重さを実感します。現場で身体を使うことから、すべての学びが始まります。',
+    body: '米づくりの一年の流れを学びながら、田んぼの作業に参加します。土を耕す・水を管理する・収穫するといった各工程のうち、立ち会える時期は参加するタイミングによって異なります。農業の現実と、食を生み出すことの重さに触れることから、学びが始まります。',
   },
   {
     number: '02',
     phase: '加工',
     title: '素材に価値を加える',
-    body: '収穫した米や地域の素材を使い、商品としての形を考えます。食品加工の工程だけでなく、「何が価値になるか」を問いながら、素材と市場の間にある思考を実践します。',
+    body: '米や地域の素材を、どんな商品にできるか考えます。加工方法だけでなく、素材の特徴をどう生かし、誰に届けるかも学びます。開催内容によっては、実際の加工作業にも参加します。',
   },
   {
     number: '03',
     phase: '販売',
     title: '価値を届ける',
-    body: 'マルシェや地域の販売の場に実際に関わり、誰に・どのように届けるかを考えます。売れた・売れなかったという事実が、次の生産と加工への問いに返ってきます。この往復が、学びを深めます。',
+    body: '地域のマルシェなど、実際の販売の場があります。日程が合えば現場に参加し、売れた・売れなかったという事実と向き合います。参加できない場合も、販売の事例を通じて、誰に・どのように届けるかを考えます。',
   },
 ]
 
@@ -66,13 +66,13 @@ export default function SixthSectorPage() {
   return (
     <>
       {/* ① Hero */}
-      <section className="min-h-[calc(100vh-68px)] flex items-center bg-background">
-        <div className="container-base py-20 lg:py-32">
+      <section className="bg-background">
+        <div className="container-base py-14 md:py-20 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
 
             {/* Text */}
             <div>
-              <p className="label-text mb-8">Learning &amp; Local Design</p>
+              <p className="label-text normal-case mb-8">Sasabaseの活動</p>
 
               <h1 className="heading-serif text-h1 text-foreground mb-8 leading-[1.35] text-balance">
                 6次産業スクール
@@ -128,10 +128,12 @@ export default function SixthSectorPage() {
             <div>
               <p className="label-text mb-8">この取り組みについて</p>
 
-              <h2 className="heading-serif text-h2 text-foreground mb-10 leading-[1.4] text-balance">
+              <h2 className="heading-serif text-h2 text-foreground mb-10 leading-[1.4]">
                 ○○体験で終わらせない。
                 <br />
-                一連の流れを通じて、ビジネス思考を育てる。
+                一連の流れを通じて、
+                <br />
+                ビジネス思考を育てる。
               </h2>
 
               <div className="space-y-6 text-base text-stone-600 leading-jp tracking-jp">
@@ -265,6 +267,10 @@ export default function SixthSectorPage() {
             </div>
 
           </div>
+
+          <p className="text-xs text-stone-400 leading-jp tracking-jp mb-6">
+            ※ 実地体験できる内容は、参加時期とプログラムの設計によって異なります。
+          </p>
 
           <div className="flex flex-col gap-0">
             {flow.map((item, i) => (

@@ -1,11 +1,10 @@
-import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="min-h-[calc(100vh-68px)] flex items-center bg-background">
-      <div className="container-base py-20 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+    <section className="bg-background">
+      <div className="container-base py-10 md:py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Text */}
           <div>
@@ -23,29 +22,19 @@ export default function Hero() {
               教育 × 地域 × ビジネスをつなぐ実験場
             </p>
 
-            <p className="text-sm text-stone-400 leading-jp tracking-jp mb-4 max-w-[44ch]">
+            <p className="text-sm text-stone-400 leading-jp tracking-jp max-w-[44ch]">
               学校でも会社でもない場所で、暮らしと仕事と学びが交わる。
               兵庫県川西市から、新しいかたちを実践し続けています。
             </p>
 
-            <p className="text-sm text-stone-400 leading-jp tracking-jp mb-12 max-w-[44ch]">
-              コンセプトは <span className="text-foreground font-medium">Learning &amp; Local Design</span> —
-              教育と地域をつなぐ、新しい学びの設計です。
-            </p>
-
-            <div className="flex flex-wrap gap-3">
-              <Link href="/sasabase" className="btn-outline">
-                Sasabaseとは
-              </Link>
-              <Link href="/concept" className="btn-outline">
-                コンセプトを見る
-              </Link>
-              <Link href="/#what-we-do" className="btn-primary">
-                プログラムを見る
-              </Link>
-              <Link href="/contact" className="btn-ghost">
-                お問い合わせ →
-              </Link>
+            {/* LLD説明 */}
+            <div className="mt-8 pt-6 border-t border-border space-y-3 max-w-[44ch]">
+              <p className="text-sm text-stone-500 leading-jp tracking-jp">
+                Sasabaseは、Learning &amp; Local Designの「地域を学びの場にする」という考えを、笹部で実践する拠点です。
+              </p>
+              <p className="text-sm text-stone-500 leading-jp tracking-jp">
+                企業研修、教育機関向けカリキュラム、地域滞在プログラム等は、Learning &amp; Local Design（LLD）が担当しています。詳しくはお問い合わせください。
+              </p>
             </div>
           </div>
 

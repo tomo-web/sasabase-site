@@ -281,12 +281,7 @@ export default function EnExperiencePage() {
               <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
                 We believe every child deserves a path. Sasabase is one of them.
               </p>
-              <p className="text-xs text-stone-400 mb-6">Japan domestic program</p>
-              <div className="flex gap-3">
-                <Link href="/support" className="btn-primary">
-                  Learn more (Japanese site)
-                </Link>
-              </div>
+              <p className="text-xs text-stone-400 mb-6">Japan domestic program — details available in Japanese</p>
             </div>
             <div className="lg:order-1 relative aspect-[4/3] w-full">
               <Image

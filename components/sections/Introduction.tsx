@@ -25,7 +25,7 @@ export default function Introduction() {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-3 mb-5">
               <span className="w-8 h-px bg-primary/50" />
-              <span className="label-text">Sasabaseとは</span>
+              <span className="label-text normal-case">Sasabaseとは</span>
             </div>
 
             <h2 className="text-h2 font-bold text-foreground mb-6 text-balance leading-jp-tight tracking-jp">

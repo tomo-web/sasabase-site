@@ -68,15 +68,6 @@ const programGroups: ProgramGroup[] = [
         note: 'Japan domestic program',
         learnMoreLabel: 'Learn more (Japanese site)',
       },
-      {
-        number: '05',
-        title: 'Alternative Learning Support',
-        description:
-          'A flexible learning environment for children who find traditional schooling difficult. Participants can join in person or remotely via telepresence robots — at their own pace, in a safe and welcoming space.',
-        href: '/support',
-        note: 'Japan domestic program',
-        learnMoreLabel: 'Learn more (Japanese site)',
-      },
     ],
   },
 ]

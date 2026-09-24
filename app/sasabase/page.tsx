@@ -24,29 +24,31 @@ export const metadata: Metadata = {
   },
 }
 
+const activities = [
+  { href: '/terraco',     label: "多世代寺子屋 Terra'Co" },
+  { href: '/oto-gohan',   label: '音とご飯の会' },
+  { href: '/6th-sector',  label: '6次産業スクール' },
+  { href: '/sasamai-club', label: '笹米クラブ' },
+]
+
 export default function SasabasePage() {
   return (
     <>
       {/* Hero */}
-      <section className="section-padding border-b border-border">
+      <section className="py-8 md:py-10 border-b border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">Sasabaseとは</p>
-              <h1 className="heading-serif text-h1 text-foreground mb-8 text-balance leading-[1.25]">
-                地域まるごと
-                <br />
-                キャンパス。
+              <p className="label-text normal-case mb-4">Sasabaseとは</p>
+              <h1 className="heading-serif text-h1 text-foreground mb-5 leading-[1.3] text-balance">
+                笹部の古民家が、<br className="hidden sm:block" />学びの場になる。
               </h1>
               <p className="text-base md:text-lg text-stone-500 leading-jp tracking-jp">
-                Sasabaseは、兵庫県川西市北部の里山「笹部」にある古民家を拠点に、
-                地域そのものを学びの場として活かす「地域まるごとキャンパス」の実践拠点です。
+                Sasabaseは、兵庫県川西市北部の里山「笹部」にある古民家を改修した学び合いの場であり、地域そのものを学びの場として活かす「地域まるごとキャンパス」の実践拠点です。玄関開けたらみんな親戚になれるような場づくりを目指しています。
               </p>
             </div>
 
-            {/* Image */}
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/IMG_8964.JPEG"
@@ -63,18 +65,17 @@ export default function SasabasePage() {
       </section>
 
       {/* 人と人がつながる場 */}
-      <section className="section-padding border-t border-border">
+      <section className="py-10 md:py-14 lg:py-16 border-t border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">場について</p>
-              <h2 className="heading-serif text-h2 text-foreground mb-8 leading-[1.4]">
+              <p className="label-text mb-4">場について</p>
+              <h2 className="heading-serif text-h2 text-foreground mb-5 leading-[1.4]">
                 人と人がホッコリつながる昭和の家「Sasabase」
               </h2>
               <p className="prose-jp mb-4">
-                空き家を活用したイベントや農作業を通じて、
+                古民家で行われるイベントや農作業を通じて、
                 人と人が自然につながる場をつくっています。
               </p>
               <p className="prose-jp">
@@ -83,8 +84,7 @@ export default function SasabasePage() {
               </p>
             </div>
 
-            {/* Image */}
-            <div className="relative aspect-[3/4] w-full">
+            <div className="relative aspect-[4/3] md:aspect-[3/4] w-full">
               <Image
                 src="/images/IMG_5518 (2).JPEG"
                 alt="Sasabaseの古民家で人々が集まっている様子"
@@ -99,21 +99,20 @@ export default function SasabasePage() {
       </section>
 
       {/* Inclusionな居場所 */}
-      <section className="section-padding bg-stone-50 border-t border-border">
+      <section className="py-10 md:py-14 lg:py-16 bg-stone-50 border-t border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">ビジョン</p>
-              <h2 className="heading-serif text-h2 text-foreground mb-8 leading-[1.4]">
+              <p className="label-text mb-4">ビジョン</p>
+              <h2 className="heading-serif text-h2 text-foreground mb-5 leading-[1.4]">
                 目指しているのは「Inclusionな居場所」
               </h2>
-              <p className="prose-jp mb-8">
+              <p className="prose-jp mb-5">
                 私たちが本当に目指しているのは、
                 誰もがそのままでいられる「居場所」であり「学び合いの場」です。
               </p>
-              <ul className="flex flex-col gap-3 mb-8">
+              <ul className="flex flex-col gap-3 mb-5">
                 {[
                   '多世代で学び合える',
                   '背景に関係なく関われる',
@@ -131,7 +130,6 @@ export default function SasabasePage() {
               </p>
             </div>
 
-            {/* Image */}
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/IMG_5775 (2).JPEG"
@@ -147,14 +145,13 @@ export default function SasabasePage() {
       </section>
 
       {/* 学校と地域 */}
-      <section className="section-padding border-t border-border">
+      <section className="py-10 md:py-14 lg:py-16 border-t border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">教育観</p>
-              <h2 className="heading-serif text-h2 text-foreground mb-8 leading-[1.4]">
+              <p className="label-text mb-4">教育観</p>
+              <h2 className="heading-serif text-h2 text-foreground mb-5 leading-[1.4]">
                 学校と地域がつながることで、学びは広がる
               </h2>
               <p className="prose-jp mb-4">
@@ -168,8 +165,7 @@ export default function SasabasePage() {
               </p>
             </div>
 
-            {/* Image */}
-            <div className="relative aspect-[3/4] w-full">
+            <div className="relative aspect-[4/3] md:aspect-[3/4] w-full">
               <Image
                 src="/images/S__145113093.jpg"
                 alt="古民家の畳の部屋で子どもたちが遊んでいる様子"
@@ -183,49 +179,31 @@ export default function SasabasePage() {
         </div>
       </section>
 
-      {/* 実践の中で学ぶ */}
-      <section className="section-padding bg-stone-50 border-t border-border">
+      {/* 取り組み */}
+      <section className="py-10 md:py-14 lg:py-16 bg-stone-50 border-t border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">取り組み</p>
-              <h2 className="heading-serif text-h2 text-foreground mb-8 leading-[1.4]">
-                実践の中で学ぶ
-              </h2>
+              <p className="label-text mb-4">取り組み</p>
               <p className="prose-jp mb-6">
-                Sasabaseでは現在、以下のような取り組みを行っています。
+                Sasabaseでは現在、以下の4つの活動を行っています。
               </p>
-              <ul className="flex flex-col gap-3 mb-8">
-                <li className="flex items-start gap-3 text-sm text-stone-600 leading-jp tracking-jp">
-                  <span className="mt-[0.35em] w-1 h-1 rounded-full bg-primary flex-shrink-0" />
-                  <Link href="/terraco" className="text-primary underline underline-offset-2 hover:opacity-70 transition-opacity">
-                    多世代寺子屋 Terra&apos;Co
-                  </Link>
-                  （毎週水曜）
-                </li>
-                <li className="flex items-start gap-3 text-sm text-stone-600 leading-jp tracking-jp">
-                  <span className="mt-[0.35em] w-1 h-1 rounded-full bg-primary flex-shrink-0" />
-                  <Link href="/6th-sector" className="text-primary underline underline-offset-2 hover:opacity-70 transition-opacity">
-                    ビジネス思考を育てる6次産業スクール（米づくりを含む実践型）
-                  </Link>
-                </li>
-                <li className="flex items-start gap-3 text-sm text-stone-600 leading-jp tracking-jp">
-                  <span className="mt-[0.35em] w-1 h-1 rounded-full bg-primary flex-shrink-0" />
-                  地域イベント・ワークショップ
-                </li>
+              <ul className="flex flex-col gap-4">
+                {activities.map((item) => (
+                  <li key={item.href} className="flex items-start gap-3 text-sm text-stone-600 leading-jp tracking-jp">
+                    <span className="mt-[0.35em] w-1 h-1 rounded-full bg-primary flex-shrink-0" />
+                    <Link
+                      href={item.href}
+                      className="text-primary underline underline-offset-2 hover:opacity-70 transition-opacity"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
-              <p className="prose-jp">
-                また、
-                <Link href="/support" className="text-primary underline underline-offset-2 hover:opacity-70 transition-opacity">
-                  学校に通いづらい子どもたちに向けて
-                </Link>
-                、テレポートロボットを活用した遠隔参加の仕組みも取り入れています。
-              </p>
             </div>
 
-            {/* Image */}
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/IMG_5829 (2).JPEG"
@@ -241,14 +219,13 @@ export default function SasabasePage() {
       </section>
 
       {/* 小さな実践が未来をつくる */}
-      <section className="section-padding border-t border-border">
+      <section className="py-10 md:py-14 lg:py-16 border-t border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">想い</p>
-              <h2 className="heading-serif text-h2 text-foreground mb-8 leading-[1.4]">
+              <p className="label-text mb-4">想い</p>
+              <h2 className="heading-serif text-h2 text-foreground mb-5 leading-[1.4]">
                 小さな実践が、未来をつくる
               </h2>
               <p className="prose-jp mb-4">
@@ -261,7 +238,6 @@ export default function SasabasePage() {
               </p>
             </div>
 
-            {/* Image */}
             <div className="relative aspect-square w-full">
               <Image
                 src="/images/IMG_4474.JPEG"
@@ -277,14 +253,13 @@ export default function SasabasePage() {
       </section>
 
       {/* アクセス */}
-      <section className="section-padding bg-stone-50 border-t border-border">
+      <section className="py-10 md:py-14 lg:py-16 bg-stone-50 border-t border-border">
         <div className="container-base">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            {/* Text */}
             <div>
-              <p className="label-text mb-6">Access</p>
-              <h2 className="heading-serif text-h2 text-foreground mb-8 leading-[1.4]">
+              <p className="label-text mb-4">Access</p>
+              <h2 className="heading-serif text-h2 text-foreground mb-5 leading-[1.4]">
                 アクセス
               </h2>
               <p className="prose-jp mb-8">
@@ -296,8 +271,7 @@ export default function SasabasePage() {
               </Link>
             </div>
 
-            {/* Image */}
-            <div className="relative aspect-[3/4] w-full">
+            <div className="relative aspect-[4/3] md:aspect-[3/4] w-full">
               <Image
                 src="/images/IMG_1589.JPEG"
                 alt="笹部駅のホームから見える緑豊かな里山の風景"
@@ -312,17 +286,13 @@ export default function SasabasePage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-primary border-t border-primary-600">
+      <section className="py-10 md:py-14 bg-primary border-t border-primary-600">
         <div className="container-base text-center">
-          <p className="text-xs text-primary-200 tracking-label uppercase mb-6">Contact</p>
-          <h2 className="heading-serif text-h1 text-white mb-6 text-balance leading-[1.4]">
+          <h2 className="heading-serif text-h2 text-white mb-5 leading-[1.4]">
             まずは遊びに来てください。
           </h2>
-          <p className="text-sm md:text-base text-primary-200 leading-jp tracking-jp mb-4 max-w-[40ch] mx-auto">
+          <p className="text-sm md:text-base text-primary-200 leading-jp tracking-jp mb-8 max-w-[40ch] mx-auto">
             見学や参加をご希望の方は、お気軽にお問い合わせください。
-          </p>
-          <p className="text-sm md:text-base text-primary-200 leading-jp tracking-jp mb-10 max-w-[40ch] mx-auto">
-            小さな一歩からでも大丈夫です。
           </p>
           <Link href="/contact" className="btn-outline-white">
             お問い合わせ

@@ -55,8 +55,8 @@ export default function TerraCoPage() {
   return (
     <>
       {/* ① Hero */}
-      <section className="min-h-[calc(100vh-68px)] flex items-center bg-background">
-        <div className="container-base py-20 lg:py-28">
+      <section className="bg-background">
+        <div className="container-base py-14 md:py-20 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
 
             {/* Text */}
@@ -191,8 +191,7 @@ export default function TerraCoPage() {
           </div>
 
           <p className="text-sm text-stone-500 leading-jp tracking-jp max-w-[48ch]">
-            その日の関わりの中で、
-            それぞれの学びが立ち上がっていきます。
+            その日の関わりの中で、それぞれの学びが立ち上がっていきます。
           </p>
 
         </div>
@@ -355,7 +354,169 @@ export default function TerraCoPage() {
         </div>
       </section>
 
-      {/* ⑦ CTA */}
+      {/* ⑦ 地元応援合宿パック */}
+      <section className="section-padding bg-stone-50 border-t border-border">
+        <div className="container-base">
+
+          {/* ヘッダー */}
+          <div className="mb-10 lg:mb-14">
+            <p className="label-text mb-4">みんなでつくる、里山の合宿</p>
+            <h2 className="heading-serif text-h2 text-foreground mb-5 leading-[1.4]">
+              地元応援合宿パック
+            </h2>
+            <p className="text-base text-stone-600 leading-jp tracking-jp max-w-[52ch]">
+              代表者が川西市内在住のグループを対象に、Sasabaseを1棟まるごと貸し出す合宿プランです。
+              みんなで食材を持ち寄り、食事をつくり、里山の夜を過ごす。
+              その滞在の中で、Sasabaseでの作業をひとつ一緒に行います。
+              消耗品・寝具はご持参いただき、持ち込んだものはすべてお持ち帰りください。
+            </p>
+          </div>
+
+          {/* 基本情報 ＋ 写真 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start mb-12">
+
+            {/* 左: 情報 */}
+            <div className="space-y-6">
+
+              {/* 対象・料金・時間 */}
+              <div className="bg-white border border-border p-6">
+                <h3 className="text-[10px] font-medium tracking-label uppercase text-stone-500 mb-5">
+                  基本情報
+                </h3>
+                <dl className="space-y-5">
+                  <div>
+                    <dt className="text-xs text-muted tracking-jp mb-1">対象</dt>
+                    <dd className="text-sm text-foreground leading-jp tracking-jp">
+                      代表者が川西市内在住のグループ（4〜15名程度）
+                    </dd>
+                  </div>
+                  <div className="pt-5 border-t border-border">
+                    <dt className="text-xs text-muted tracking-jp mb-1">料金</dt>
+                    <dd>
+                      <span className="heading-serif text-h3 text-foreground">19,000円</span>
+                      <span className="text-xs text-stone-500 ml-2 tracking-jp">
+                        1棟・1グループあたり / 1泊
+                      </span>
+                    </dd>
+                  </div>
+                  <div className="pt-5 border-t border-border">
+                    <dt className="text-xs text-muted tracking-jp mb-1">
+                      チェックイン / チェックアウト
+                    </dt>
+                    <dd className="text-sm text-foreground leading-jp tracking-jp">
+                      15:00 ／ 翌 10:00
+                      <span className="text-stone-400 ml-1 text-xs">（時間帯は応相談）</span>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+
+              {/* オプション */}
+              <div className="bg-white border border-border p-6">
+                <h3 className="text-[10px] font-medium tracking-label uppercase text-stone-500 mb-5">
+                  オプション
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center justify-between gap-4 text-sm leading-jp tracking-jp">
+                    <span className="text-stone-600">キッチンのみ利用</span>
+                    <span className="text-foreground font-medium whitespace-nowrap">+ 1,000円</span>
+                  </li>
+                  <li className="flex items-center justify-between gap-4 text-sm leading-jp tracking-jp border-t border-border pt-3">
+                    <span className="text-stone-600">キッチンと屋外の窯を利用</span>
+                    <span className="text-foreground font-medium whitespace-nowrap">+ 2,000円</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* 滞在のお約束 */}
+              <div>
+                <h3 className="text-[10px] font-medium tracking-label uppercase text-stone-500 mb-4">
+                  滞在のお約束
+                </h3>
+                <ul className="flex flex-col gap-3">
+                  {[
+                    '滞在中にSasabaseでの作業をひとつ行う（農作業・草抜き・植木の剪定など）',
+                    '消耗品・寝具は持参',
+                    'ゴミを含む持ち込み品はすべて持ち帰り',
+                    '利用後は清掃し、原状回復する',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-stone-600 leading-jp tracking-jp">
+                      <span className="mt-[0.5em] w-1 h-1 rounded-full bg-primary flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+            </div>
+
+            {/* 右: 写真 */}
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/images/IMG_2.JPEG"
+                alt="Sasabaseの庭でグループが草抜きをする様子"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+
+          </div>
+
+          {/* モデルプラン */}
+          <div className="border-t border-border pt-10 mb-10">
+            <h3 className="text-[10px] font-medium tracking-label uppercase text-stone-500 mb-6">
+              モデルプラン
+            </h3>
+            <div className="flex flex-col max-w-xl">
+              {[
+                { time: '15:00',     note: '庭の草抜き。「みんなでやったら何でも楽しい」' },
+                { time: '16:30',     note: '買い出し・夕食の準備' },
+                { time: '',          note: '各家庭からお米1合や冷蔵庫の野菜などを持ち寄り、足りないものを近くのスーパーで購入', sub: true },
+                { time: '18:00',     note: '夕食' },
+                { time: '19:30',     note: '裏庭で花火' },
+                { time: '20:30',     note: '入浴・就寝準備' },
+                { time: '21:30',     note: '就寝' },
+                { time: '翌 06:30', note: '起床・朝食の準備' },
+                { time: '08:00',     note: '散歩' },
+                { time: '09:00',     note: '清掃' },
+                { time: '10:00',     note: 'チェックアウト' },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className={`flex gap-5 py-3 border-b border-border last:border-0 ${
+                    item.sub ? 'border-b-0 pt-0' : ''
+                  }`}
+                >
+                  <span className={`text-xs font-mono w-16 flex-shrink-0 pt-0.5 ${
+                    item.sub ? 'text-transparent' : 'text-primary'
+                  }`}>
+                    {item.time || '　'}
+                  </span>
+                  <p className={`text-sm leading-jp tracking-jp ${
+                    item.sub ? 'text-stone-400 text-xs' : 'text-stone-600'
+                  }`}>
+                    {item.note}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* お問い合わせ */}
+          <div>
+            <p className="text-sm text-stone-500 leading-jp tracking-jp mb-5">
+              ご利用の条件・日程など、詳細はお問い合わせください。
+            </p>
+            <Link href="/contact" className="btn-primary">
+              合宿についてお問い合わせ
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ⑧ CTA */}
       <section className="section-padding bg-primary border-t border-primary-600">
         <div className="container-base text-center">
           <p className="text-xs text-primary-200 tracking-label uppercase mb-6">

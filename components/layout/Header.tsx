@@ -6,21 +6,21 @@ import { useState, useEffect } from 'react'
 import MobileMenu from './MobileMenu'
 
 const jpNavItems = [
-  { label: 'ホーム',            href: '/' },
-  { label: 'Sasabaseについて',  href: '/sasabase' },
-  { label: 'コンセプト',        href: '/concept' },
-  { label: 'プログラム',        href: '/#what-we-do' },
-  { label: '実践ログ',          href: '/archive' },
-  { label: 'Access',            href: '/access' },
-  { label: 'お問い合わせ',      href: '/contact' },
+  { label: 'Sasabaseについて',     href: '/sasabase' },
+  { label: "多世代寺子屋 Terra'Co", href: '/terraco' },
+  { label: '音とご飯の会',           href: '/oto-gohan' },
+  { label: '6次産業スクール',        href: '/6th-sector' },
+  { label: '笹米クラブ',             href: '/sasamai-club' },
+  { label: 'アクセス',               href: '/access' },
+  { label: 'お問い合わせ',           href: '/contact' },
 ]
 
 const enNavItems = [
-  { label: 'Home',        href: '/en' },
-  { label: 'About',       href: '/en/about' },
-  { label: 'Programs',    href: '/en/experience' },
-  { label: 'Access',      href: '/en/access' },
-  { label: 'Contact',     href: '/en/contact' },
+  { label: 'Home',     href: '/en' },
+  { label: 'About',    href: '/en/about' },
+  { label: 'Programs', href: '/en/experience' },
+  { label: 'Access',   href: '/en/access' },
+  { label: 'Contact',  href: '/en/contact' },
 ]
 
 function getCounterpartHref(pathname: string): { jp: string; en: string } {
@@ -29,7 +29,8 @@ function getCounterpartHref(pathname: string): { jp: string; en: string } {
     const jpMap: Record<string, string> = {
       '': '/',
       '/about': '/sasabase',
-      '/experience': '/#what-we-do',
+      '/experience': '/6th-sector',
+      '/experience/6th-sector': '/6th-sector',
       '/access': '/access',
       '/contact': '/contact',
     }
@@ -38,9 +39,13 @@ function getCounterpartHref(pathname: string): { jp: string; en: string } {
   const enMap: Record<string, string> = {
     '/': '/en',
     '/sasabase': '/en/about',
-    '/concept': '/en/about',
-    '/contact': '/en/contact',
+    '/terraco': '/en',
+    '/oto-gohan': '/en',
+    '/6th-sector': '/en/experience/6th-sector',
+    '/sasamai-club': '/en',
     '/access': '/en/access',
+    '/contact': '/en/contact',
+    '/concept': '/en/about',
     '/archive': '/en',
   }
   return { jp: pathname, en: enMap[pathname] ?? '/en' }
@@ -75,26 +80,27 @@ export default function Header() {
         }`}
       >
         <div className="container-base h-full flex items-center justify-between">
+
           {/* Logo */}
-          <Link href={isEn ? '/en' : '/'} className="flex flex-col leading-none group">
+          <Link href={isEn ? '/en' : '/'} className="flex flex-col leading-none group flex-shrink-0">
             <span className="text-base font-bold text-foreground tracking-wide group-hover:text-primary transition-colors duration-200">
               Sasabase
             </span>
             <span className="text-[10px] text-muted tracking-label">
-              Learning &amp; Local Design
+              川西市笹部の地域活動拠点
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation — lg (1024px) 以上で表示 */}
           <nav
-            className="hidden md:flex items-center gap-0.5"
+            className="hidden lg:flex items-center gap-0"
             aria-label={isEn ? 'Main navigation' : 'メインナビゲーション'}
           >
-            {navItems.slice(isEn ? 0 : 1).map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-3.5 py-1.5 text-xs rounded-sm tracking-jp transition-colors duration-150 ${
+                className={`whitespace-nowrap px-2 py-1.5 text-[11px] rounded-sm tracking-jp transition-colors duration-150 ${
                   pathname === item.href
                     ? 'text-primary font-medium'
                     : 'text-stone-500 hover:text-foreground'
@@ -105,13 +111,11 @@ export default function Header() {
             ))}
 
             {/* Language Switcher */}
-            <div className="flex items-center gap-0.5 ml-2 pl-2.5 border-l border-border">
+            <div className="flex items-center gap-0 ml-2 pl-2 border-l border-border">
               <Link
                 href={jpHref}
-                className={`px-2 py-1.5 text-xs rounded-sm tracking-wide transition-colors duration-150 ${
-                  !isEn
-                    ? 'text-primary font-semibold'
-                    : 'text-stone-400 hover:text-foreground'
+                className={`px-2 py-1.5 text-[11px] rounded-sm tracking-wide transition-colors duration-150 ${
+                  !isEn ? 'text-primary font-semibold' : 'text-stone-400 hover:text-foreground'
                 }`}
                 aria-label="日本語"
               >
@@ -119,44 +123,32 @@ export default function Header() {
               </Link>
               <Link
                 href={enHref}
-                className={`px-2 py-1.5 text-xs rounded-sm tracking-wide transition-colors duration-150 ${
-                  isEn
-                    ? 'text-primary font-semibold'
-                    : 'text-stone-400 hover:text-foreground'
+                className={`px-2 py-1.5 text-[11px] rounded-sm tracking-wide transition-colors duration-150 ${
+                  isEn ? 'text-primary font-semibold' : 'text-stone-400 hover:text-foreground'
                 }`}
                 aria-label="English"
               >
                 EN
               </Link>
             </div>
+
           </nav>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile / Tablet Menu Toggle — lg 未満で表示 */}
           <button
             type="button"
-            className="md:hidden flex flex-col gap-[5px] p-2 rounded hover:bg-stone-100 transition-colors"
+            className="lg:hidden flex flex-col gap-[5px] p-2 rounded hover:bg-stone-100 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen
               ? (isEn ? 'Close menu' : 'メニューを閉じる')
               : (isEn ? 'Open menu' : 'メニューを開く')}
             aria-expanded={menuOpen}
           >
-            <span
-              className={`block w-5 h-px bg-foreground transition-all duration-200 ${
-                menuOpen ? 'translate-y-[5px] rotate-45' : ''
-              }`}
-            />
-            <span
-              className={`block w-5 h-px bg-foreground transition-all duration-200 ${
-                menuOpen ? 'opacity-0' : ''
-              }`}
-            />
-            <span
-              className={`block w-5 h-px bg-foreground transition-all duration-200 ${
-                menuOpen ? '-translate-y-[5px] -rotate-45' : ''
-              }`}
-            />
+            <span className={`block w-5 h-px bg-foreground transition-all duration-200 ${menuOpen ? 'translate-y-[5px] rotate-45' : ''}`} />
+            <span className={`block w-5 h-px bg-foreground transition-all duration-200 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-5 h-px bg-foreground transition-all duration-200 ${menuOpen ? '-translate-y-[5px] -rotate-45' : ''}`} />
           </button>
+
         </div>
       </header>
 

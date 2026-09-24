@@ -53,7 +53,7 @@ export default function MobileMenu({
         aria-label={isEn ? 'Navigation' : 'ナビゲーション'}
       >
         <nav className="p-6 flex flex-col gap-1">
-          {items.slice(isEn ? 0 : 1).map((item) => (
+          {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -96,10 +96,7 @@ export default function MobileMenu({
                 EN
               </Link>
             </div>
-            <p className="text-xs text-muted tracking-jp">
-              LLD / sasabase.com
-            </p>
-            <p className="text-xs text-stone-400 tracking-jp mt-0.5">
+            <p className="text-xs text-stone-400 tracking-jp mt-2">
               Kawanishi · Hyogo, Japan
             </p>
           </div>

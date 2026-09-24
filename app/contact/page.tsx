@@ -1,16 +1,12 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
-import Link from 'next/link'
 
 const subjectLabels: Record<string, string> = {
   'sixth-sector': '6次産業スクールについて',
-  'corporate': '企業研修について',
-  'support': '不登校・学習支援について',
   'terraco': "多世代寺子屋 Terra'Coについて",
-  'stay': '滞在体験について',
+  'oto-gohan': '音とご飯の会について',
   'sasamai': '米づくり・笹米クラブについて',
-  'space': 'スペース貸しについて',
   'visit': '見学・視察について',
   'media': '取材・メディアについて',
   'other': 'その他',
@@ -71,7 +67,7 @@ export default function ContactPage() {
           <h1 className="text-h1 font-bold text-foreground mb-4 tracking-jp">お問い合わせ</h1>
           <p className="text-base text-muted tracking-wide mb-4">Contact / Inquiry</p>
           <p className="prose-jp">
-            プログラムへの参加、スペースのご利用、見学・取材など、
+            プログラムへの参加、見学・取材など、
             どんなことでもお気軽にご連絡ください。
             通常3営業日以内にご返信いたします。
           </p>
@@ -84,36 +80,16 @@ export default function ContactPage() {
             {/* Sidebar */}
             <div className="lg:col-span-1 space-y-8">
               <div>
-                <h2 className="text-sm font-bold text-foreground tracking-jp mb-5">
-                  よくお問い合わせいただく内容
-                </h2>
-                <div className="space-y-3">
-                  {[
-                    { icon: '🌾', label: 'プログラムについて', href: '/#what-we-do' },
-                    { icon: '🏠', label: 'スペース貸しについて', href: '/space' },
-                    { icon: '🌾', label: '米づくり・笹米クラブ', href: '/activities' },
-                    { icon: '📍', label: 'アクセス・見学', href: '/access' },
-                  ].map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="flex items-center gap-3 px-4 py-3 bg-stone-50 rounded-lg border border-border hover:border-primary/30 hover:bg-primary/4 transition-all text-sm text-stone-700 tracking-jp group"
-                    >
-                      <span>{item.icon}</span>
-                      {item.label}
-                      <svg className="w-3.5 h-3.5 ml-auto text-muted group-hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                      </svg>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              <div>
                 <h2 className="text-sm font-bold text-foreground tracking-jp mb-4">SNS</h2>
                 <div className="flex gap-3">
-                  <a href="#" className="text-sm text-stone-600 hover:text-primary tracking-jp transition-colors">Instagram</a>
-                  <a href="#" className="text-sm text-stone-600 hover:text-primary tracking-jp transition-colors">Facebook</a>
+                  <a
+                    href="https://www.instagram.com/sasabasers/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-stone-600 hover:text-primary tracking-jp transition-colors"
+                  >
+                    Instagram
+                  </a>
                 </div>
               </div>
             </div>
@@ -178,12 +154,9 @@ export default function ContactPage() {
                       >
                         <option value="">選択してください</option>
                         <option value="sixth-sector">6次産業スクールについて</option>
-                        <option value="corporate">企業研修について</option>
-                        <option value="support">不登校・学習支援について</option>
                         <option value="terraco">多世代寺子屋 Terra&apos;Coについて</option>
-                        <option value="stay">滞在体験について</option>
+                        <option value="oto-gohan">音とご飯の会について</option>
                         <option value="sasamai">米づくり・笹米クラブについて</option>
-                        <option value="space">スペース貸しについて</option>
                         <option value="visit">見学・視察について</option>
                         <option value="media">取材・メディアについて</option>
                         <option value="other">その他</option>

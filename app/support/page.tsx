@@ -1,27 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
 export const metadata: Metadata = {
-  title: '不登校・学習支援 | 川西市Sasabase',
-  description:
-    "学校以外の学びの場として、川西市SasabaseはKubiロボット・大学生チュータリング・Terra'Coを通じて、一人ひとりのペースに寄り添います。兵庫県川西市。",
-  keywords: [
-    '不登校 居場所 兵庫',
-    '不登校 支援 川西市',
-    '学校以外 学び場',
-    'テレプレゼンス 学習',
-    'オルタナティブ教育 兵庫',
-    '不登校 兵庫',
-    '学習支援 川西',
-  ],
-  openGraph: {
-    title: '不登校・学習支援 | 川西市Sasabase',
-    description:
-      "Kubiロボット・大学生チュータリング・Terra'Coを通じて、一人ひとりのペースに寄り添う学び場。兵庫県川西市。",
-    locale: 'ja_JP',
-    type: 'website',
-  },
+  robots: { index: false, follow: false },
 }
 
 const options = [
@@ -68,6 +51,7 @@ const features = [
 ]
 
 export default function SupportPage() {
+  notFound()
   return (
     <>
       {/* ① 導入 */}
@@ -322,7 +306,7 @@ export default function SupportPage() {
         <div className="container-base">
 
           <div className="mb-14">
-            <p className="label-text mb-6">Sasabaseの関わり方</p>
+            <p className="label-text normal-case mb-6">Sasabaseの関わり方</p>
             <h2 className="heading-serif text-h2 text-foreground leading-[1.4]">
               「こうしなければ」は、ありません。
             </h2>

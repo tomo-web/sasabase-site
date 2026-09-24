@@ -83,7 +83,7 @@ export default function EnAboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div>
-              <p className="label-text mb-6">What is Sasabase?</p>
+              <p className="label-text normal-case mb-6">What is Sasabase?</p>
               <h2 className="heading-serif text-h1 text-foreground mb-8 text-balance leading-[1.25]">
                 The whole
                 <br />

@@ -26,7 +26,7 @@ export default function SasabaseIntro() {
 
           {/* Text */}
           <div className="order-1 lg:order-2">
-            <p className="label-text mb-6">実験拠点 / Sasabase</p>
+            <p className="label-text normal-case mb-6">実験拠点 / Sasabase</p>
 
             <h2 className="heading-serif text-h2 text-balance text-foreground mb-6 leading-[1.4]">
               昭和の古民家から、

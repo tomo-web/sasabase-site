@@ -10,6 +10,11 @@ const nextConfig = {
         destination: '/sasamai-club',
         permanent: true,
       },
+      {
+        source: '/en/experience/6th-sector',
+        destination: '/en/6th-sector',
+        permanent: true,
+      },
     ]
   },
 }

@@ -1,18 +1,15 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
-import Link from 'next/link'
 
 const subjectLabels: Record<string, string> = {
-  'terraco': "Terra'Co Community Learning",
-  'alternative': 'Alternative Learning Support',
   'sixth-sector': '6th-Sector School',
-  'stay': 'Farm Stay / Regional Immersion',
-  'corporate': 'Corporate Training',
-  'collaboration': 'Project Collaboration',
-  'visit': 'Visit / Site Tour',
-  'media': 'Media / Research',
-  'other': 'Other',
+  'terraco':      "Terra'Co",
+  'oto-gohan':    'Oto-Gohan — Music & Food Gathering',
+  'sasamai':      'Sasamai Club',
+  'visit':        'Visit / Site Tour',
+  'media':        'Media / Research',
+  'other':        'Other',
 }
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mlgarjnr'
@@ -64,13 +61,11 @@ export default function EnContactPage() {
             <span className="w-8 h-px bg-primary/50" />
             <span className="label-text">Contact</span>
           </div>
-          <h1 className="heading-serif text-h1 text-foreground mb-4 leading-[1.25]">
-            Get in touch
-          </h1>
+          <h1 className="text-h1 font-bold text-foreground mb-4">Get in touch</h1>
           <p className="text-base text-muted tracking-wide mb-4">Contact / Inquiry</p>
           <p className="text-base text-stone-600 leading-relaxed max-w-[52ch]">
-            Whether you want to visit, join a program, explore a collaboration, or simply learn more
-            about what we do — we&apos;d love to hear from you.
+            Whether you want to visit, join an activity, or simply find out more —
+            please feel free to reach out.
             We typically respond within three business days.
           </p>
         </div>
@@ -82,32 +77,6 @@ export default function EnContactPage() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1 space-y-8">
-              <div>
-                <h2 className="text-sm font-bold text-foreground mb-5">
-                  Common enquiries
-                </h2>
-                <div className="space-y-3">
-                  {[
-                    { icon: '🌱', label: 'Programs & Learning', href: '/en/experience' },
-                    { icon: '🏡', label: 'Farm Stay & Visits', href: '/en/experience#international' },
-                    { icon: '🤝', label: 'Corporate Training', href: '/en/experience#organisations' },
-                    { icon: '📍', label: 'Access & Getting Here', href: '/en/access' },
-                  ].map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="flex items-center gap-3 px-4 py-3 bg-stone-50 rounded-lg border border-border hover:border-primary/30 hover:bg-primary/4 transition-all text-sm text-stone-700 group"
-                    >
-                      <span>{item.icon}</span>
-                      {item.label}
-                      <svg className="w-3.5 h-3.5 ml-auto text-muted group-hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                      </svg>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
               <div>
                 <h2 className="text-sm font-bold text-foreground mb-4">Find us online</h2>
                 <div className="flex gap-4">
@@ -130,9 +99,9 @@ export default function EnContactPage() {
                 <p className="text-sm text-stone-600 leading-relaxed">
                   ~50 min from Osaka (Hankyu line) · 3 min walk from Sasabe Station.
                 </p>
-                <Link href="/en/access" className="text-xs text-primary hover:opacity-70 transition-opacity mt-3 inline-block">
+                <a href="/en/access" className="text-xs text-primary hover:opacity-70 transition-opacity mt-3 inline-block">
                   Full directions →
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -194,12 +163,10 @@ export default function EnContactPage() {
                         className="w-full px-4 py-3 text-sm border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                       >
                         <option value="">Select a topic</option>
-                        <option value="terraco">Terra&apos;Co Community Learning</option>
-                        <option value="alternative">Alternative Learning Support</option>
                         <option value="sixth-sector">6th-Sector School</option>
-                        <option value="stay">Farm Stay / Regional Immersion</option>
-                        <option value="corporate">Corporate Training</option>
-                        <option value="collaboration">Project Collaboration</option>
+                        <option value="terraco">Terra&apos;Co</option>
+                        <option value="oto-gohan">Oto-Gohan — Music &amp; Food Gathering</option>
+                        <option value="sasamai">Sasamai Club</option>
                         <option value="visit">Visit / Site Tour</option>
                         <option value="media">Media / Research</option>
                         <option value="other">Other</option>

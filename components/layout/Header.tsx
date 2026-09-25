@@ -16,11 +16,13 @@ const jpNavItems = [
 ]
 
 const enNavItems = [
-  { label: 'Home',     href: '/en' },
-  { label: 'About',    href: '/en/about' },
-  { label: 'Programs', href: '/en/experience' },
-  { label: 'Access',   href: '/en/access' },
-  { label: 'Contact',  href: '/en/contact' },
+  { label: 'About',        href: '/en/about' },
+  { label: "Terra'Co",     href: '/en/terraco' },
+  { label: 'Oto-Gohan',   href: '/en/oto-gohan' },
+  { label: '6th-Sector',  href: '/en/6th-sector' },
+  { label: 'Sasamai Club', href: '/en/sasamai-club' },
+  { label: 'Access',       href: '/en/access' },
+  { label: 'Contact',      href: '/en/contact' },
 ]
 
 function getCounterpartHref(pathname: string): { jp: string; en: string } {
@@ -29,8 +31,13 @@ function getCounterpartHref(pathname: string): { jp: string; en: string } {
     const jpMap: Record<string, string> = {
       '': '/',
       '/about': '/sasabase',
+      '/terraco': '/terraco',
+      '/oto-gohan': '/oto-gohan',
+      '/6th-sector': '/6th-sector',
+      '/sasamai-club': '/sasamai-club',
       '/experience': '/6th-sector',
       '/experience/6th-sector': '/6th-sector',
+      '/experience/stay': '/stay',
       '/access': '/access',
       '/contact': '/contact',
     }
@@ -39,10 +46,11 @@ function getCounterpartHref(pathname: string): { jp: string; en: string } {
   const enMap: Record<string, string> = {
     '/': '/en',
     '/sasabase': '/en/about',
-    '/terraco': '/en',
-    '/oto-gohan': '/en',
-    '/6th-sector': '/en/experience/6th-sector',
-    '/sasamai-club': '/en',
+    '/terraco': '/en/terraco',
+    '/oto-gohan': '/en/oto-gohan',
+    '/6th-sector': '/en/6th-sector',
+    '/sasamai-club': '/en/sasamai-club',
+    '/stay': '/en/experience/stay',
     '/access': '/en/access',
     '/contact': '/en/contact',
     '/concept': '/en/about',
@@ -87,7 +95,7 @@ export default function Header() {
               Sasabase
             </span>
             <span className="text-[10px] text-muted tracking-label">
-              川西市笹部の地域活動拠点
+              {isEn ? 'Community hub in Sasabe, Kawanishi' : '川西市笹部の地域活動拠点'}
             </span>
           </Link>
 

@@ -153,7 +153,7 @@ export default function EnStayPage() {
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/IMG_9565.JPG"
-                alt="Interior of the Sasabase farmhouse — tatami and corridor"
+                alt="Interior of the Sasabase — tatami and corridor"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -213,7 +213,7 @@ export default function EnStayPage() {
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/みんぱく.png"
-                alt="Sasabase farmhouse interior — tatami rooms, kitchen, and hallways"
+                alt="Sasabase interior — tatami rooms, kitchen, and hallways"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"

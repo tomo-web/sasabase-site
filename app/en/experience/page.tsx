@@ -191,7 +191,7 @@ export default function EnExperiencePage() {
               <p className="text-xs text-stone-400 mb-6">Japan domestic program</p>
               <div className="flex gap-3">
                 <Link href="/corporate-training" className="btn-primary">
-                  Learn more (Japanese site)
+                  Learn more (Japanese page)
                 </Link>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function EnExperiencePage() {
           </p>
 
           {/* Terra'Co */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20 pb-20 border-b border-border">
+          <div id="terraco" className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20 pb-20 border-b border-border scroll-mt-[68px]">
             <div>
               <p className="label-text mb-4">Weekly gathering</p>
               <h3 className="heading-serif text-h2 text-foreground mb-6 leading-[1.4]">
@@ -246,7 +246,7 @@ export default function EnExperiencePage() {
               <p className="text-xs text-stone-400 mb-6">Japan domestic program</p>
               <div className="flex gap-3">
                 <Link href="/terraco" className="btn-primary">
-                  Learn more (Japanese site)
+                  Learn more (Japanese page)
                 </Link>
               </div>
             </div>
@@ -261,39 +261,80 @@ export default function EnExperiencePage() {
             </div>
           </div>
 
-          {/* Alternative Learning */}
-          <div id="alternative-learning" className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center scroll-mt-[68px]">
+          {/* Oto-Gohan */}
+          <div id="oto-gohan" className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20 pb-20 border-b border-border scroll-mt-[68px]">
             <div className="lg:order-2">
-              <p className="label-text mb-4">Flexible learning</p>
+              <p className="label-text mb-4">Music &amp; food</p>
               <h3 className="heading-serif text-h2 text-foreground mb-6 leading-[1.4]">
-                Alternative Learning Support
+                Oto-Gohan — Music &amp; Food Gathering
               </h3>
               <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
-                For children who find it difficult to attend conventional school, Sasabase offers a
-                safe, unhurried alternative. Participants can join in person or connect remotely
-                via telepresence robots — a technology that allows a child at home to move through
-                the Sasabase space, interact with others, and feel genuinely present.
+                An informal gathering at Sasabase, built around food and music.
+                Participants help prepare a meal together, then share it while listening to music —
+                a small, unhurried evening open to anyone who wants to come.
               </p>
               <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
-                The goal is not to replicate school. It is to reconnect a child with curiosity,
-                with peers, and with the joy of being somewhere that feels right.
+                Held irregularly. Announcements are posted on Instagram. Spaces are limited,
+                so checking ahead is recommended.
               </p>
-              <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
-                We believe every child deserves a path. Sasabase is one of them.
-              </p>
-              <p className="text-xs text-stone-400 mb-6">Japan domestic program — details available in Japanese</p>
+              <p className="text-xs text-stone-400 mb-6">Japan domestic · Japanese-language event</p>
+              <div className="flex gap-3">
+                <Link href="/oto-gohan" className="btn-primary">
+                  Learn more (Japanese page)
+                </Link>
+                <a
+                  href="https://www.instagram.com/sasabasers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-ghost"
+                >
+                  Instagram →
+                </a>
+              </div>
             </div>
             <div className="lg:order-1 relative aspect-[4/3] w-full">
               <Image
-                src="/images/ロボット学習セッションの風景.png"
-                alt="Conceptual image of remote learning via telepresence robot at Sasabase"
+                src="/images/oto-gohan-1.jpg"
+                alt="Oto-Gohan gathering — food and music at Sasabase"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <p className="absolute bottom-0 left-0 right-0 bg-black/40 text-white text-xs px-3 py-2">
-                This is just a conceptual image.
+            </div>
+          </div>
+
+          {/* Sasamai Club */}
+          <div id="sasamai-club" className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center scroll-mt-[68px]">
+            <div>
+              <p className="label-text mb-4">Rice farming</p>
+              <h3 className="heading-serif text-h2 text-foreground mb-6 leading-[1.4]">
+                Sasamai Club
+              </h3>
+              <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
+                A supporter club for rice cultivation in Sasabe&apos;s terraced paddies. Members
+                take part in the farming year alongside local people — from irrigation and field
+                preparation in spring through to harvest in autumn.
               </p>
+              <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
+                Rice farming here is not only about producing food. It is also about maintaining
+                the terraced landscape, preserving local agricultural knowledge, and keeping the
+                community connected to the land.
+              </p>
+              <p className="text-xs text-stone-400 mb-6">Japan domestic program</p>
+              <div className="flex gap-3">
+                <Link href="/sasamai-club" className="btn-primary">
+                  Learn more (Japanese page)
+                </Link>
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/images/sasamai-hero.jpg"
+                alt="Terraced rice paddies in Sasabe, Kawanishi"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
 

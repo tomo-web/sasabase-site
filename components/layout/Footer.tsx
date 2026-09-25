@@ -16,19 +16,14 @@ const jpNav = [
 ]
 
 const enSiteNav = [
-  { label: 'Home',      href: '/en' },
-  { label: 'About',     href: '/en/about' },
-  { label: 'Programs',  href: '/en/experience' },
-  { label: 'Access',    href: '/en/access' },
-  { label: 'Contact',   href: '/en/contact' },
-]
-
-const enPrograms = [
-  { label: '6th-Sector School',                 href: '/en/experience/6th-sector' },
-  { label: 'Regional Immersion Stay',           href: '/en/experience/stay' },
-  { label: 'Corporate Training & Team Building', href: '/en/experience#organisations' },
-  { label: "Terra'Co",                          href: '/en/experience#local' },
-  { label: 'Alternative Learning Support',      href: '/en/experience#alternative-learning' },
+  { label: 'Home',         href: '/en' },
+  { label: 'About',        href: '/en/about' },
+  { label: "Terra'Co",     href: '/en/terraco' },
+  { label: 'Oto-Gohan',   href: '/en/oto-gohan' },
+  { label: '6th-Sector School', href: '/en/6th-sector' },
+  { label: 'Sasamai Club', href: '/en/sasamai-club' },
+  { label: 'Access',       href: '/en/access' },
+  { label: 'Contact',      href: '/en/contact' },
 ]
 
 export default function Footer() {
@@ -45,7 +40,7 @@ export default function Footer() {
             <Link href={isEn ? '/en' : '/'} className="inline-block mb-5">
               <span className="text-lg font-bold text-white tracking-wide">Sasabase</span>
               <span className="block text-[10px] text-stone-600 tracking-label mt-0.5">
-                川西市笹部の地域活動拠点
+                {isEn ? 'Community hub in Sasabe, Kawanishi' : '川西市笹部の地域活動拠点'}
               </span>
             </Link>
             {isEn ? (
@@ -91,37 +86,20 @@ export default function Footer() {
           {/* Programs (EN only) + Language switcher */}
           <div>
             {isEn && (
-              <>
-                <h3 className="text-[10px] font-medium tracking-label uppercase text-stone-600 mb-5">
-                  Programs
-                </h3>
-                <ul className="flex flex-col gap-3 mb-8">
-                  {enPrograms.map((item) => (
-                    <li key={item.label}>
-                      <Link
-                        href={item.href}
-                        className="text-sm text-stone-400 hover:text-white transition-colors tracking-jp"
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <div className="pt-6 border-t border-stone-800">
-                  <p className="text-[10px] font-medium tracking-label uppercase text-stone-600 mb-3">
-                    Language
-                  </p>
-                  <div className="flex gap-3">
-                    <Link href="/" className="text-xs text-stone-500 hover:text-stone-300 transition-colors">
-                      日本語
-                    </Link>
-                    <span className="text-stone-700">|</span>
-                    <Link href="/en" className="text-xs text-white font-semibold transition-colors">
-                      English
-                    </Link>
-                  </div>
+              <div>
+                <p className="text-[10px] font-medium tracking-label uppercase text-stone-600 mb-3">
+                  Language
+                </p>
+                <div className="flex gap-3">
+                  <Link href="/" className="text-xs text-stone-500 hover:text-stone-300 transition-colors">
+                    日本語
+                  </Link>
+                  <span className="text-stone-700">|</span>
+                  <Link href="/en" className="text-xs text-white font-semibold transition-colors">
+                    English
+                  </Link>
                 </div>
-              </>
+              </div>
             )}
             {!isEn && (
               <div>

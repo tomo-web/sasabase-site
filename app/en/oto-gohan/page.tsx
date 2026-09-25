@@ -72,9 +72,7 @@ export default function EnOtoGohanPage() {
             <div>
               <p className="label-text mb-8">What is Oto-Gohan?</p>
               <h2 className="heading-serif text-h2 text-foreground mb-10 leading-[1.4]">
-                An evening of food and music
-                <br />
-                at Sasabase.
+                Sharing food and music at Sasabase.
               </h2>
 
               <div className="space-y-6 text-base text-stone-600 leading-relaxed">
@@ -85,7 +83,7 @@ export default function EnOtoGohanPage() {
                 <p>
                   Each time, we prepare food around a theme. We sometimes ask participants
                   to help with the preparation. Then we eat together and listen to music —
-                  a slow, unhurried evening.
+                  a slow, unhurried time.
                 </p>
                 <p>
                   Whether you know people here or are visiting for the first time,

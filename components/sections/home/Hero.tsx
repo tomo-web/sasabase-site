@@ -33,8 +33,14 @@ export default function Hero() {
                 Sasabaseは、Learning &amp; Local Designの「地域を学びの場にする」という考えを、笹部で実践する拠点です。
               </p>
               <p className="text-sm text-stone-500 leading-jp tracking-jp">
-                企業研修、教育機関向けカリキュラム、地域滞在プログラム等は、Learning &amp; Local Design（LLD）が担当しています。詳しくはお問い合わせください。
+                企業研修、教育機関向けカリキュラム、地域滞在プログラム等は、Learning &amp; Local Design（LLD）が担当しています。
               </p>
+              <a
+                href="https://lld-japan.com/programs.html"
+                className="inline-block text-sm font-medium text-primary hover:underline"
+              >
+                LLDの事業・プログラムを見る →
+              </a>
             </div>
           </div>
 

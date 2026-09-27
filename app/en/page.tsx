@@ -81,8 +81,14 @@ export default function EnHomePage() {
                 </p>
                 <p className="text-sm text-stone-500 leading-relaxed">
                   Corporate training, educational curricula, and regional stay programmes
-                  are handled by Learning &amp; Local Design (LLD). Please enquire for details.
+                  are handled by Learning &amp; Local Design (LLD).
                 </p>
+                <a
+                  href="https://lld-japan.com/en/programs.html"
+                  className="inline-block text-sm font-medium text-primary hover:underline"
+                >
+                  Explore LLD programmes →
+                </a>
               </div>
             </div>
 

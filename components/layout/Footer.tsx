@@ -62,6 +62,12 @@ export default function Footer() {
             >
               Instagram →
             </a>
+            <a
+              href={isEn ? 'https://lld-japan.com/en/' : 'https://lld-japan.com/'}
+              className="text-xs text-stone-500 hover:text-white transition-colors tracking-jp block mt-4"
+            >
+              {isEn ? 'Visit LLD Japan →' : 'LLDのサイトを見る →'}
+            </a>
           </div>
 
           {/* Navigation */}

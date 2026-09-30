@@ -3,13 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '6th-Sector School | Agriculture & Local Economy, Kawanishi',
+  title: 'Farm-to-Market Learning | Sixth-Sector School at Sasabase',
   description:
-    'A practice-based learning programme at Sasabase covering the full cycle of regional production — from growing rice to processing and selling. Learning through real work in Kawanishi, Hyogo.',
+    'At Sasabase, young people have planted rice and developed a rice-flour cookie. Sales are planned for 4 October 2026, followed by a sales tally and closing ceremony on 17 October.',
   openGraph: {
-    title: '6th-Sector School | Agriculture & Local Economy, Kawanishi',
+    title: 'Farm-to-Market Learning | Sixth-Sector School at Sasabase',
     description:
-      'Grow. Process. Sell. Experience the full cycle of regional production and local economy through practice at Sasabase, Kawanishi.',
+      'The first cohort has completed product development, costing, outsourced production and pricing. Sales are planned for 4 October, with a review and closing ceremony on 17 October.',
     locale: 'en_US',
     type: 'website',
   },
@@ -51,6 +51,27 @@ const flow = [
   },
 ]
 
+const firstCohort = [
+  {
+    number: '01',
+    phase: 'Explore local resources',
+    title: 'Step into the rice field',
+    body: 'The young participants joined rice planting in Sasabe. Seeing the work behind rice growing was their starting point.',
+  },
+  {
+    number: '02',
+    phase: 'Decide what to make and for whom',
+    title: 'Develop a product',
+    body: 'They developed a rice-flour cookie, considered its customers and marketing, and completed costing, outsourced production and pricing.',
+  },
+  {
+    number: '03',
+    phase: 'Bring it to market',
+    title: 'Sell, then reflect',
+    body: 'Sales of the finished cookies are planned for 4 October 2026. The group will tally the sales and hold a closing ceremony on 17 October.',
+  },
+]
+
 export default function EnSixthSectorPage() {
   return (
     <>
@@ -60,27 +81,22 @@ export default function EnSixthSectorPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
 
             <div>
-              <p className="label-text normal-case mb-8">Activity at Sasabase</p>
+              <p className="label-text normal-case mb-8">Sasabase activity · Sixth-Sector School</p>
 
               <h1 className="heading-serif text-h1 text-foreground mb-8 leading-[1.35] text-balance">
-                6th-Sector School
+                Farm-to-Market Learning
               </h1>
 
               <p className="text-base md:text-lg text-stone-500 leading-relaxed mb-4 max-w-[36ch]">
-                Grow. Process. Sell — without separating the steps.
+                From the rice field to the market.
               </p>
               <p className="text-base md:text-lg text-stone-500 leading-relaxed mb-12 max-w-[36ch]">
-                A programme designed to learn through practice in a real regional setting.
+                Young people have planted rice and developed a rice-flour cookie. Explore the first cohort&apos;s work before its October sales and review.
               </p>
 
-              <div className="flex flex-wrap gap-3">
-                <Link href="#about" className="btn-primary">
-                  About the programme
-                </Link>
-                <Link href="#flow" className="btn-outline">
-                  Learning flow
-                </Link>
-              </div>
+              <Link href="#first-cohort" className="btn-primary">
+                See the first cohort
+              </Link>
             </div>
 
             <div className="relative aspect-[3/4] w-full">
@@ -102,6 +118,52 @@ export default function EnSixthSectorPage() {
         </div>
       </section>
 
+      {/* The first cohort at Sasabase */}
+      <section id="first-cohort" className="section-padding border-t border-border bg-stone-50 scroll-mt-[68px]">
+        <div className="container-base">
+          <p className="label-text mb-6">The first cohort in Sasabe</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-10">
+            <div>
+              <h2 className="heading-serif text-h2 text-foreground leading-[1.4] mb-6">
+                From the rice field<br />to the customer.
+              </h2>
+              <p className="text-base text-stone-600 leading-relaxed mb-0">
+                Young participants have worked with local people and businesses, from rice planting to developing a rice-flour cookie. Product planning, costing, outsourced production and pricing are complete. Sales are planned for 4 October, followed by a sales tally and closing ceremony on 17 October.
+              </p>
+            </div>
+            <figure>
+              <div className="relative aspect-[1280/670] w-full overflow-hidden">
+                <Image
+                  src="/images/sixth-sector-first-cohort.webp"
+                  alt="First-cohort activities: product discussions, processing and outdoor work in Sasabe"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+              <figcaption className="text-xs text-stone-500 leading-relaxed mt-3">
+                From the first cohort&apos;s record. <a href="https://note.com/withtomo/n/n86ed2695d5b0" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">Read the story in Japanese ↗</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
+            {firstCohort.map((item) => (
+              <article key={item.number} className="bg-white border border-border p-6 lg:p-8">
+                <div className="flex items-center justify-between gap-4 border-b border-border pb-4 mb-6">
+                  <span className="text-xs font-mono text-stone-400">{item.number}</span>
+                  <span className="text-xs text-primary">{item.phase}</span>
+                </div>
+                <h3 className="heading-serif text-h3 text-foreground mb-4">{item.title}</h3>
+                <p className="text-sm text-stone-600 leading-relaxed mb-0">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <p className="text-xs text-stone-400 leading-relaxed mt-6 mb-0">
+            Hands-on activities vary with the season and the timing of each programme.
+          </p>
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" className="section-padding border-t border-border scroll-mt-[68px]">
         <div className="container-base">
@@ -111,30 +173,30 @@ export default function EnSixthSectorPage() {
               <p className="label-text mb-8">About the programme</p>
 
               <h2 className="heading-serif text-h2 text-foreground mb-10 leading-[1.4]">
-                Not a one-off experience.
+                Working in the field.
                 <br />
-                Business thinking grown through real practice.
+                Setting a price.
+                <br />
+                One connected learning journey.
               </h2>
 
               <div className="space-y-6 text-base text-stone-600 leading-relaxed">
                 <p>
-                  In Japan, &ldquo;6th-sector&rdquo; refers to the integration of primary production
-                  (agriculture), secondary production (processing), and tertiary activities
-                  (sales and services) — 1 × 2 × 3 = 6. The aim is to create new value from
-                  local resources.
+                  In Japan, &ldquo;sixth industrialization&rdquo; refers to connecting primary
+                  production, secondary processing, and tertiary sales or services —
+                  1 × 2 × 3 = 6. The aim is to create new value from local resources.
                 </p>
                 <p>
-                  In most settings, however, learning is divided. A place for agriculture teaches
-                  only agriculture. A place for business teaches only business.
+                  At Sasabase, the work in the rice field, product planning, collaboration with
+                  processors, and selling are treated as parts of one connected challenge.
                 </p>
                 <p>
-                  At Sasabase, we practise this entire cycle without separating the steps.
-                  Turning the soil, harvesting, processing, delivering — by going through the
-                  whole sequence, you confront the question of what value really means.
+                  Which tasks participants can do in person depends on the season and the timing
+                  of the programme. At every stage, they consider how a local resource becomes
+                  something valuable, and who it is for.
                 </p>
                 <p>
-                  This is not an agriculture experience. It is a design for learning that
-                  connects education and the local economy.
+                  It is practical learning shaped with local people and connected to real economic activity.
                 </p>
               </div>
             </div>
@@ -160,9 +222,9 @@ export default function EnSixthSectorPage() {
           <div className="mb-14">
             <p className="label-text mb-6">Why learn here?</p>
             <h2 className="heading-serif text-h2 text-foreground leading-[1.4] max-w-[32ch]">
-              The field is not
+              Real fields.
               <br />
-              a constructed one.
+              Real decisions.
             </h2>
           </div>
 
@@ -219,9 +281,9 @@ export default function EnSixthSectorPage() {
             <div>
               <p className="label-text mb-6">Learning flow</p>
               <h2 className="heading-serif text-h2 text-foreground mb-6 leading-[1.4]">
-                Designed as understanding
+                Learn the whole journey,
                 <br />
-                and practice, not as experience.
+                from growing to selling.
               </h2>
               <p className="text-sm text-stone-500 leading-relaxed max-w-[44ch] mb-4">
                 The three phases of production, processing, and selling are each
@@ -294,7 +356,7 @@ export default function EnSixthSectorPage() {
               </h2>
               <div className="space-y-5 text-base text-stone-600 leading-relaxed">
                 <p>
-                  6th-sector learning cannot be completed in a single day&apos;s experience.
+                  This kind of learning cannot be completed in a single day&apos;s experience.
                   The essence only becomes visible through involvement that spans the seasons —
                   from soil preparation to selling.
                 </p>
@@ -337,7 +399,7 @@ export default function EnSixthSectorPage() {
 
               <div className="space-y-5 text-base text-stone-600 leading-relaxed mb-10">
                 <p>
-                  The 6th-Sector School designs each programme around an individual consultation.
+                  We design each Farm-to-Market Learning programme through an individual consultation.
                   Because the content varies depending on your objectives, duration, and level
                   of involvement, please feel free to reach out first.
                 </p>
@@ -383,8 +445,7 @@ export default function EnSixthSectorPage() {
 
           <div className="space-y-3 mb-10">
             <p className="text-sm md:text-base text-primary-200 leading-relaxed max-w-[40ch] mx-auto">
-              This is not an agriculture experience.
-              It is a learning space that connects education and the local economy.
+              A practical learning programme connecting education with local livelihoods and markets.
             </p>
           </div>
 

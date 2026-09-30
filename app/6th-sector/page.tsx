@@ -1,25 +1,22 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 
 export const metadata: Metadata = {
   title: '6次産業スクール | 川西市・実践型プログラム',
   description:
-    '生産・加工・販売を一体で学ぶ、川西市の実践型6次産業スクール。棚田での米づくりから加工・販売まで、地域経済の仕組みを体験を通じて学びます。',
+    '川西市笹部の6次産業スクール。第1期では中高生が米粉クッキーの企画・商品化まで取り組みました。10月4日に販売、17日に売上計算と修了式を予定しています。',
   keywords: [
-    '6次産業 体験',
-    '農業ビジネス 兵庫',
-    '農業体験 川西市',
-    '地域起業 実践',
-    '6次産業 学び',
-    '社会人 学び直し 実践型',
-    '地域経済 学び',
+    '6次産業スクール',
+    '川西市 笹部',
+    '中高生 実践型教育',
+    '地域資源 商品企画',
+    '生産 加工 販売',
   ],
   openGraph: {
     title: '6次産業スクール | 川西市・実践型プログラム',
     description:
-      '棚田での米づくりから加工・販売まで体験する、川西市の実践型6次産業スクール。地域の経済サイクルを体験しながら学びます。',
+      '笹部の田んぼから地域の市場へ。中高生が米粉クッキーを企画・商品化した第1期の実践を紹介します。10月4日に販売、17日に売上計算と修了式を予定しています。',
     locale: 'ja_JP',
     type: 'website',
   },
@@ -61,6 +58,27 @@ const whyHere = [
   },
 ]
 
+const firstCohort = [
+  {
+    number: '01',
+    phase: '地域の資源に触れる',
+    title: '田んぼに入る',
+    body: '中高生が笹部の田んぼで田植えに参加しました。米づくりを、地域の現場から知るところが出発点です。',
+  },
+  {
+    number: '02',
+    phase: '何を、誰に届けるか',
+    title: '商品を形にする',
+    body: '米粉クッキーの商品企画とマーケティングに取り組み、誰に届けるかを考えました。原価計算、委託製造、価格決定まで進めました。',
+  },
+  {
+    number: '03',
+    phase: '地域の市場へ',
+    title: '10月4日、販売へ',
+    body: '完成した米粉クッキーを2026年10月4日に販売し、10月17日に売上計算と修了式を行う予定です。販売の結果を確かめ、第1期の学びを振り返ります。',
+  },
+]
+
 
 export default function SixthSectorPage() {
   return (
@@ -79,20 +97,15 @@ export default function SixthSectorPage() {
               </h1>
 
               <p className="text-base md:text-lg text-stone-500 leading-jp tracking-jp mb-4 max-w-[36ch]">
-                生産・加工・販売を、分けずに学ぶ。
+                田んぼから、市場まで。
               </p>
               <p className="text-base md:text-lg text-stone-500 leading-jp tracking-jp mb-12 max-w-[36ch]">
-                地域の現場を舞台にした、実践型の学びの設計です。
+                中高生が田植えを経験し、米粉クッキーを企画・商品化しました。販売と振り返りを控えた第1期の実践を紹介します。
               </p>
 
-              <div className="flex flex-wrap gap-3">
-                <Link href="#about" className="btn-primary">
-                  この取り組みについて
-                </Link>
-                <Link href="#flow" className="btn-outline">
-                  学びの流れを見る
-                </Link>
-              </div>
+              <Link href="#first-cohort" className="btn-primary">
+                第1期の実践を見る
+              </Link>
             </div>
 
             {/* Image */}
@@ -119,6 +132,52 @@ export default function SixthSectorPage() {
         </div>
       </section>
 
+      {/* Sasabaseでの第1期 */}
+      <section id="first-cohort" className="section-padding border-t border-border bg-stone-50 scroll-mt-[68px]">
+        <div className="container-base">
+          <p className="label-text mb-6">笹部での第1期</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-10">
+            <div>
+              <h2 className="heading-serif text-h2 text-foreground leading-[1.4] mb-6">
+                田んぼから、<br />お客さまのもとへ。
+              </h2>
+              <p className="text-base text-stone-600 leading-jp tracking-jp mb-0">
+                第1期では中高生が、地域の人や事業者と関わりながら、田植えから米粉クッキーの商品企画、原価計算、委託製造、価格決定まで取り組みました。10月4日に販売し、17日に売上計算と修了式を行う予定です。
+              </p>
+            </div>
+            <figure>
+              <div className="relative aspect-[1280/670] w-full overflow-hidden">
+                <Image
+                  src="/images/sixth-sector-first-cohort.webp"
+                  alt="第1期の学びの様子。古民家での商品企画、加工の体験、地域での作業"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+              <figcaption className="text-xs text-stone-500 leading-jp tracking-jp mt-3">
+                第1期の記録から。<a href="https://note.com/withtomo/n/n86ed2695d5b0" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">活動の記録を読む ↗</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
+            {firstCohort.map((item) => (
+              <article key={item.number} className="bg-white border border-border p-6 lg:p-8">
+                <div className="flex items-center justify-between gap-4 border-b border-border pb-4 mb-6">
+                  <span className="text-xs font-mono text-stone-400">{item.number}</span>
+                  <span className="text-xs text-primary tracking-jp">{item.phase}</span>
+                </div>
+                <h3 className="heading-serif text-h3 text-foreground mb-4">{item.title}</h3>
+                <p className="text-sm text-stone-600 leading-jp tracking-jp mb-0">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <p className="text-xs text-stone-400 leading-jp tracking-jp mt-6 mb-0">
+            実地活動の内容は、参加時期によって異なります。
+          </p>
+        </div>
+      </section>
+
       {/* ② この取り組みについて */}
       <section id="about" className="section-padding border-t border-border scroll-mt-[68px]">
         <div className="container-base">
@@ -129,11 +188,11 @@ export default function SixthSectorPage() {
               <p className="label-text mb-8">この取り組みについて</p>
 
               <h2 className="heading-serif text-h2 text-foreground mb-10 leading-[1.4]">
-                ○○体験で終わらせない。
+                田んぼの作業も、
                 <br />
-                一連の流れを通じて、
+                商品の値付けも、
                 <br />
-                ビジネス思考を育てる。
+                ひとつながりの学びに。
               </h2>
 
               <div className="space-y-6 text-base text-stone-600 leading-jp tracking-jp">
@@ -146,12 +205,12 @@ export default function SixthSectorPage() {
                   農業を学ぶ場は農業だけを。経営を学ぶ場は経営だけを。
                 </p>
                 <p>
-                  Sasabaseでは、この一連の流れを「分けずに」実践します。
-                  土を耕し、収穫し、加工し、届ける。
-                  その全体を通じて初めて見えてくる、価値とは何かという問いと向き合います。
+                  Sasabaseでは、田んぼの作業から商品企画、加工事業者との連携、販売までを、
+                  ひとつながりの課題として扱います。参加する時期によって実地で関われる工程は異なりますが、
+                  地域の資源をどう価値に変え、誰に届けるかを考えます。
                 </p>
                 <p>
-                  これは農業体験ではなく、地域と経済をつなぐ学びの設計です。
+                  地域の人とともに考え、実際の社会につなげる実践型の学びです。
                 </p>
               </div>
             </div>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Programs | Sasabase — Rural Japan',
   description:
-    'Programs for international visitors, organisations, and local learners in Kawanishi, Hyogo. 6th-Sector School, rural stays, corporate training, and more.',
+    'Programs for international visitors, organisations, and local learners in Kawanishi, Hyogo. Farm to Market, rural stays, corporate training, and more.',
   keywords: [
     'rural Japan programs',
     'farm stay rural Japan',
@@ -68,12 +68,12 @@ export default function EnExperiencePage() {
             regional Japan, its agriculture, its culture, and its people.
           </p>
 
-          {/* 6th-Sector School */}
+          {/* Farm to Market */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20 pb-20 border-b border-border">
             <div>
               <p className="label-text mb-4">Agriculture × Business</p>
               <h3 className="heading-serif text-h2 text-foreground mb-6 leading-[1.4]">
-                6th-Sector School
+                Farm to Market
               </h3>
               <p className="text-base text-stone-600 leading-relaxed mb-4 max-w-prose">
                 In Japan, &ldquo;6th-sector&rdquo; refers to the integration of primary production (farming),

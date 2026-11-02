@@ -3,11 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Farm-to-Market Learning | Sixth-Sector School at Sasabase',
+  title: 'Farm to Market at Sasabase',
   description:
     'At Sasabase, young people have planted rice and developed a rice-flour cookie. Sales are planned for 4 October 2026, followed by a sales tally and closing ceremony on 17 October.',
   openGraph: {
-    title: 'Farm-to-Market Learning | Sixth-Sector School at Sasabase',
+    title: 'Farm to Market at Sasabase',
     description:
       'The first cohort has completed product development, costing, outsourced production and pricing. Sales are planned for 4 October, with a review and closing ceremony on 17 October.',
     locale: 'en_US',
@@ -81,10 +81,10 @@ export default function EnSixthSectorPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
 
             <div>
-              <p className="label-text normal-case mb-8">Sasabase activity · Sixth-Sector School</p>
+              <p className="label-text normal-case mb-8">Sasabase activity · Farm to Market</p>
 
               <h1 className="heading-serif text-h1 text-foreground mb-8 leading-[1.35] text-balance">
-                Farm-to-Market Learning
+                Farm to Market
               </h1>
 
               <p className="text-base md:text-lg text-stone-500 leading-relaxed mb-4 max-w-[36ch]">
@@ -399,7 +399,7 @@ export default function EnSixthSectorPage() {
 
               <div className="space-y-5 text-base text-stone-600 leading-relaxed mb-10">
                 <p>
-                  We design each Farm-to-Market Learning programme through an individual consultation.
+                  We design each Farm to Market programme through an individual consultation.
                   Because the content varies depending on your objectives, duration, and level
                   of involvement, please feel free to reach out first.
                 </p>

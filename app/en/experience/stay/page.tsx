@@ -44,7 +44,7 @@ const canDo = [
   {
     number: '04',
     title: 'Combine with programs',
-    body: "Pair your stay with the 6th-Sector School, rice farming, or Terra'Co. For those who want to go deeper — a stay makes it possible.",
+    body: "Pair your stay with the Farm to Market, rice farming, or Terra'Co. For those who want to go deeper — a stay makes it possible.",
   },
 ]
 

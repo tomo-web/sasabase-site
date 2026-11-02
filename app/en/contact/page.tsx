@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react'
 
 const subjectLabels: Record<string, string> = {
-  'sixth-sector': '6th-Sector School',
+  'sixth-sector': 'Farm to Market',
   'terraco':      "Terra'Co",
   'oto-gohan':    'Oto-Gohan — Music & Food Gathering',
   'sasamai':      'Sasamai Club',
@@ -163,7 +163,7 @@ export default function EnContactPage() {
                         className="w-full px-4 py-3 text-sm border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                       >
                         <option value="">Select a topic</option>
-                        <option value="sixth-sector">6th-Sector School</option>
+                        <option value="sixth-sector">Farm to Market</option>
                         <option value="terraco">Terra&apos;Co</option>
                         <option value="oto-gohan">Oto-Gohan — Music &amp; Food Gathering</option>
                         <option value="sasamai">Sasamai Club</option>

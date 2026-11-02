@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const activities = [
   { href: '/terraco',     label: "多世代寺子屋 Terra'Co" },
   { href: '/oto-gohan',   label: '音とご飯の会' },
-  { href: '/6th-sector',  label: '6次産業スクール' },
+  { href: '/6th-sector',  label: '「畑からマーケット」スクール' },
   { href: '/sasamai-club', label: '笹米クラブ' },
 ]
 

@@ -3,18 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '6次産業スクール | 川西市・実践型プログラム',
+  title: '「畑からマーケット」スクール | 川西市・実践型プログラム',
   description:
-    '川西市笹部の6次産業スクール。第1期では中高生が米粉クッキーの企画・商品化まで取り組みました。10月4日に販売、17日に売上計算と修了式を予定しています。',
+    '川西市笹部の「畑からマーケット」スクール。第1期では中高生が米粉クッキーの企画・商品化まで取り組みました。10月4日に販売、17日に売上計算と修了式を予定しています。',
   keywords: [
-    '6次産業スクール',
+    '「畑からマーケット」スクール',
     '川西市 笹部',
     '中高生 実践型教育',
     '地域資源 商品企画',
     '生産 加工 販売',
   ],
   openGraph: {
-    title: '6次産業スクール | 川西市・実践型プログラム',
+    title: '「畑からマーケット」スクール | 川西市・実践型プログラム',
     description:
       '笹部の田んぼから地域の市場へ。中高生が米粉クッキーを企画・商品化した第1期の実践を紹介します。10月4日に販売、17日に売上計算と修了式を予定しています。',
     locale: 'ja_JP',
@@ -93,7 +93,7 @@ export default function SixthSectorPage() {
               <p className="label-text normal-case mb-8">Sasabaseの活動</p>
 
               <h1 className="heading-serif text-h1 text-foreground mb-8 leading-[1.35] text-balance">
-                6次産業スクール
+                「畑からマーケット」スクール
               </h1>
 
               <p className="text-base md:text-lg text-stone-500 leading-jp tracking-jp mb-4 max-w-[36ch]">
@@ -423,7 +423,7 @@ export default function SixthSectorPage() {
 
               <div className="space-y-5 text-base text-stone-600 leading-jp tracking-jp mb-10">
                 <p>
-                  6次産業スクールは、個別のご相談をもとにプログラムを設計しています。
+                  「畑からマーケット」スクールは、個別のご相談をもとにプログラムを設計しています。
                   目的・期間・関わり方によって内容が変わるため、
                   まずはお気軽にご連絡ください。
                 </p>

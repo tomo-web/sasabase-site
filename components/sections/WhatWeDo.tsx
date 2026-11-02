@@ -14,8 +14,8 @@ const items = [
   {
     icon: '🌾',
     tag: 'プログラム',
-    title: '6次産業学校',
-    titleEn: '6th Sector School',
+    title: '「畑からマーケット」スクール',
+    titleEn: 'Farm to Market',
     description:
       '農業（生産）×加工×販売の一体的な学びを体験するプログラム。地域の農業から食の仕組みまでを、実践を通して学びます。',
     href: '/programs#sixth-sector',

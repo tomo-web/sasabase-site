@@ -9,7 +9,7 @@ const jpNavItems = [
   { label: 'Sasabaseについて',     href: '/sasabase' },
   { label: "多世代寺子屋 Terra'Co", href: '/terraco' },
   { label: '音とご飯の会',           href: '/oto-gohan' },
-  { label: '6次産業スクール',        href: '/6th-sector' },
+  { label: '「畑からマーケット」スクール',        href: '/6th-sector' },
   { label: '笹米クラブ',             href: '/sasamai-club' },
   { label: 'アクセス',               href: '/access' },
   { label: 'お問い合わせ',           href: '/contact' },

@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react'
 
 const subjectLabels: Record<string, string> = {
-  'sixth-sector': '6次産業スクールについて',
+  'sixth-sector': '「畑からマーケット」スクールについて',
   'terraco': "多世代寺子屋 Terra'Coについて",
   'oto-gohan': '音とご飯の会について',
   'sasamai': '米づくり・笹米クラブについて',
@@ -153,7 +153,7 @@ export default function ContactPage() {
                         className="w-full px-4 py-3 text-sm border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary tracking-jp transition-colors"
                       >
                         <option value="">選択してください</option>
-                        <option value="sixth-sector">6次産業スクールについて</option>
+                        <option value="sixth-sector">「畑からマーケット」スクールについて</option>
                         <option value="terraco">多世代寺子屋 Terra&apos;Coについて</option>
                         <option value="oto-gohan">音とご飯の会について</option>
                         <option value="sasamai">米づくり・笹米クラブについて</option>

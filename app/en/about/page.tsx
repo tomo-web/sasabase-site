@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const activities = [
   { href: '/en/terraco',      label: "Terra'Co — Multigenerational Learning Space" },
   { href: '/en/oto-gohan',    label: 'Oto-Gohan — Music & Food Gathering' },
-  { href: '/en/6th-sector',   label: '6th-Sector School' },
+  { href: '/en/6th-sector',   label: 'Farm to Market' },
   { href: '/en/sasamai-club', label: 'Sasamai Club' },
 ]
 

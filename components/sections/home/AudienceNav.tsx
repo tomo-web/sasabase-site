@@ -4,7 +4,7 @@ const audiences = [
   {
     number: '01',
     title: '学びたい方へ',
-    description: '6次産業スクール、多世代交流Terra\'Co、不登校支援など、学びのかたちはさまざまです。',
+    description: '「畑からマーケット」スクール、多世代交流Terra\'Co、不登校支援など、学びのかたちはさまざまです。',
     href: '/#what-we-do',
     label: 'プログラムを見る',
   },

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: '%s | Sasabase',
   },
   description:
-    '兵庫県川西市の里山「笹部」にある地域まるごとキャンパス。Terra\'Co・音とご飯の会・6次産業スクール・笹米クラブの4活動を通じて、農業・食・多世代交流を実践しています。大阪から約50分。',
+    '兵庫県川西市の里山「笹部」にある地域まるごとキャンパス。Terra\'Co・音とご飯の会・「畑からマーケット」スクール・笹米クラブの4活動を通じて、農業・食・多世代交流を実践しています。大阪から約50分。',
   keywords: [
     'Sasabase',
     'Learning & Local Design',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sasabase | 川西市の地域まるごとキャンパス',
     description:
-      '兵庫県川西市の古民家を拠点に、農業・食・多世代交流を通じた学びを実践する場。Terra\'Co・6次産業スクール・笹米クラブなど4つの活動を展開しています。',
+      '兵庫県川西市の古民家を拠点に、農業・食・多世代交流を通じた学びを実践する場。Terra\'Co・「畑からマーケット」スクール・笹米クラブなど4つの活動を展開しています。',
     locale: 'ja_JP',
     type: 'website',
   },

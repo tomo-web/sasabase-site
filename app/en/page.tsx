@@ -32,7 +32,7 @@ const activities = [
   },
   {
     number: '03',
-    title: '6th-Sector School',
+    title: 'Farm to Market',
     description:
       'A practice-based learning programme covering the full cycle of regional production — from growing rice to processing and selling. Learning through real work.',
     href: '/en/6th-sector',

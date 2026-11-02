@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '6th-Sector School | Agriculture & Local Business, Japan',
+  title: 'Farm to Market | Agriculture & Local Business, Japan',
   description:
     'Hands-on agriculture and local business learning in Kawanishi, Hyogo. Seasonal, place-based program — open to international participants. Enquire about joining.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'learning travel Japan',
   ],
   openGraph: {
-    title: '6th-Sector School | Agriculture & Local Business, Japan',
+    title: 'Farm to Market | Agriculture & Local Business, Japan',
     description:
       'Agriculture, food processing, and local distribution — hands-on learning in Kawanishi, Hyogo. Seasonal program open to international participants.',
     locale: 'en_US',
@@ -60,7 +60,7 @@ export default function EnSixthSectorPage() {
               <p className="label-text mb-8">Agriculture × Business</p>
 
               <h1 className="heading-serif text-h1 text-foreground mb-8 leading-[1.35] text-balance">
-                6th-Sector School
+                Farm to Market
               </h1>
 
               <p className="text-base md:text-lg text-stone-500 leading-relaxed mb-4 max-w-[40ch]">
@@ -84,7 +84,7 @@ export default function EnSixthSectorPage() {
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/IMG_4474.JPEG"
-                alt="Rice cultivation at Sasabase — 6th-Sector School"
+                alt="Rice cultivation at Sasabase — Farm to Market"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -238,7 +238,7 @@ export default function EnSixthSectorPage() {
           </h2>
 
           <p className="text-sm md:text-base text-primary-200 leading-relaxed mb-4 max-w-[40ch] mx-auto">
-            The 6th-Sector School is arranged on a seasonal, request basis.
+            The Farm to Market is arranged on a seasonal, request basis.
             Contact us to explore what may be possible depending on timing.
           </p>
           <p className="text-sm md:text-base text-primary-200 leading-relaxed mb-10 max-w-[40ch] mx-auto">

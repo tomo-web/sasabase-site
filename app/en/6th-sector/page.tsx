@@ -35,8 +35,8 @@ const flow = [
   {
     number: '01',
     phase: 'Primary',
-    title: 'Soil preparation & rice growing',
-    body: 'Learning involves taking part in the year-round cycle of rice cultivation. What you can join depends on the timing of your participation — from preparing the soil to managing water to harvesting. You begin by encountering the weight of what it means to grow food.',
+    title: 'Fieldwork & rice growing',
+    body: 'Participants work on growing crops in the fields. They also learn about the yearly cycle of rice growing, exploring the rice paddies and their seasonal tasks as the programme timing allows. What work and ingenuity go into growing our food? Learning at the school begins with getting to know the soil and crops firsthand.',
   },
   {
     number: '02',

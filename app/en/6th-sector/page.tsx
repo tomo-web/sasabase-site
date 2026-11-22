@@ -1,15 +1,16 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import SchoolUpdate from '@/components/sections/SchoolUpdate'
 
 export const metadata: Metadata = {
   title: 'Farm to Market at Sasabase',
   description:
-    'At Sasabase, young people have planted rice and developed a rice-flour cookie. Sales are planned for 4 October 2026, followed by a sales tally and closing ceremony on 17 October.',
+    'The first Farm to Market cohort has completed product development, sales, financial reflection and its closing ceremony. Explore participant voices and the April 2027 programme, with primary and high-school courses.',
   openGraph: {
     title: 'Farm to Market at Sasabase',
     description:
-      'The first cohort has completed product development, costing, outsourced production and pricing. Sales are planned for 4 October, with a review and closing ceremony on 17 October.',
+      'Read the first cohort’s reflections and discover the 2027 pilot: small groups, two age-based courses and a fee of ¥12,000 for six sessions per term.',
     locale: 'en_US',
     type: 'website',
   },
@@ -68,7 +69,7 @@ const firstCohort = [
     number: '03',
     phase: 'Bring it to market',
     title: 'Sell, then reflect',
-    body: 'Sales of the finished cookies are planned for 4 October 2026. The group will tally the sales and hold a closing ceremony on 17 October.',
+    body: 'The participants sold their cookies at a local market. In the final session, they calculated sales and costs, reflected on the results, considered their next steps and celebrated completing the programme.',
   },
 ]
 
@@ -91,12 +92,13 @@ export default function EnSixthSectorPage() {
                 From the rice field to the market.
               </p>
               <p className="text-base md:text-lg text-stone-500 leading-relaxed mb-12 max-w-[36ch]">
-                Young people have planted rice and developed a rice-flour cookie. Explore the first cohort&apos;s work before its October sales and review.
+                Our first cohort has completed its journey from rice planting to product development, sales and reflection. In April 2027, a new primary-school course will open alongside the junior and senior high-school course.
               </p>
 
               <Link href="#first-cohort" className="btn-primary">
                 See the first cohort
               </Link>
+              <Link href="#programme-2027" className="btn-ghost mt-4">Explore the 2027 programme →</Link>
             </div>
 
             <div className="relative aspect-[3/4] w-full">
@@ -128,7 +130,7 @@ export default function EnSixthSectorPage() {
                 From the rice field<br />to the customer.
               </h2>
               <p className="text-base text-stone-600 leading-relaxed mb-0">
-                Young participants have worked with local people and businesses, from rice planting to developing a rice-flour cookie. Product planning, costing, outsourced production and pricing are complete. Sales are planned for 4 October, followed by a sales tally and closing ceremony on 17 October.
+                Young participants worked with local people and businesses, from rice planting to developing and selling a rice-flour cookie. They completed planning, costing, outsourced production and pricing, then reviewed revenue and costs in the final session and celebrated at a closing ceremony.
               </p>
             </div>
             <figure>
@@ -163,6 +165,8 @@ export default function EnSixthSectorPage() {
           </p>
         </div>
       </section>
+
+      <SchoolUpdate english />
 
       {/* About */}
       <section id="about" className="section-padding border-t border-border scroll-mt-[68px]">

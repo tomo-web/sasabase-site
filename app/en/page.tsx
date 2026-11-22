@@ -1,3 +1,4 @@
+import { SchoolNews } from '@/components/sections/SchoolUpdate'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -182,6 +183,8 @@ export default function EnHomePage() {
       </section>
 
       {/* CTA banner */}
+      <SchoolNews english />
+
       <section className="py-10 md:py-14 bg-primary border-t border-primary-600">
         <div className="container-base">
           <p className="heading-serif text-xl md:text-2xl lg:text-[1.75rem] text-white mb-6 leading-[1.5]">

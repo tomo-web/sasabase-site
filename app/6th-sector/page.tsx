@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import SchoolUpdate from '@/components/sections/SchoolUpdate'
 
 export const metadata: Metadata = {
   title: '「畑からマーケット」スクール | 川西市・実践型プログラム',
   description:
-    '川西市笹部の「畑からマーケット」スクール。第1期では中高生が米粉クッキーの企画・商品化まで取り組みました。10月4日に販売、17日に売上計算と修了式を予定しています。',
+    '川西市笹部の「畑からマーケット」スクール。第1期の販売・売上計算・修了式を終え、参加者の声を紹介。2027年4月は小学生コースも同時開講。各期全6回12,000円、各コース6名の少人数制です。',
   keywords: [
     '「畑からマーケット」スクール',
     '川西市 笹部',
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '「畑からマーケット」スクール | 川西市・実践型プログラム',
     description:
-      '笹部の田んぼから地域の市場へ。中高生が米粉クッキーを企画・商品化した第1期の実践を紹介します。10月4日に販売、17日に売上計算と修了式を予定しています。',
+      '第1期が修了。商品づくり・販売・収支の振り返りと参加者の声を紹介します。2027年4月は小学生・中高生コースを開講。パイロット参加費は各期全6回12,000円です。',
     locale: 'ja_JP',
     type: 'website',
   },
@@ -74,8 +75,8 @@ const firstCohort = [
   {
     number: '03',
     phase: '地域の市場へ',
-    title: '10月4日、販売へ',
-    body: '完成した米粉クッキーを2026年10月4日に販売し、10月17日に売上計算と修了式を行う予定です。販売の結果を確かめ、第1期の学びを振り返ります。',
+    title: '販売から、振り返りへ',
+    body: '完成した米粉クッキーを地域の市で販売しました。最終回には売上と費用を計算し、結果を振り返って次の一歩を考え、修了式を迎えました。',
   },
 ]
 
@@ -100,12 +101,13 @@ export default function SixthSectorPage() {
                 田んぼから、市場まで。
               </p>
               <p className="text-base md:text-lg text-stone-500 leading-jp tracking-jp mb-12 max-w-[36ch]">
-                中高生が田植えを経験し、米粉クッキーを企画・商品化しました。販売と振り返りを控えた第1期の実践を紹介します。
+                第1期は、田植えから米粉クッキーの商品づくり・販売・売上計算まで取り組み、修了しました。2027年4月は小学生コースも同時開講します。
               </p>
 
               <Link href="#first-cohort" className="btn-primary">
                 第1期の実践を見る
               </Link>
+              <Link href="#programme-2027" className="btn-ghost mt-4">2027年度の参加案内 →</Link>
             </div>
 
             {/* Image */}
@@ -142,7 +144,7 @@ export default function SixthSectorPage() {
                 田んぼから、<br />お客さまのもとへ。
               </h2>
               <p className="text-base text-stone-600 leading-jp tracking-jp mb-0">
-                第1期では中高生が、地域の人や事業者と関わりながら、田植えから米粉クッキーの商品企画、原価計算、委託製造、価格決定まで取り組みました。10月4日に販売し、17日に売上計算と修了式を行う予定です。
+                第1期では中高生が、地域の人や事業者と関わりながら、田植えから米粉クッキーの商品企画、原価計算、委託製造、価格決定、販売まで取り組みました。最終回は売上計算と振り返り、その先を考える時間を持ち、修了式を終えました。
               </p>
             </div>
             <figure>
@@ -177,6 +179,8 @@ export default function SixthSectorPage() {
           </p>
         </div>
       </section>
+
+      <SchoolUpdate />
 
       {/* ② この取り組みについて */}
       <section id="about" className="section-padding border-t border-border scroll-mt-[68px]">
@@ -423,7 +427,7 @@ export default function SixthSectorPage() {
 
               <div className="space-y-5 text-base text-stone-600 leading-jp tracking-jp mb-10">
                 <p>
-                  「畑からマーケット」スクールは、個別のご相談をもとにプログラムを設計しています。
+                  2027年度の小学生・中高生コースについて、参加のご相談を受け付けています。学校・団体向けのプログラムも、個別のご相談をもとに設計します。
                   目的・期間・関わり方によって内容が変わるため、
                   まずはお気軽にご連絡ください。
                 </p>

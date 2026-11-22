@@ -186,21 +186,23 @@ export default function EnSixthSectorPage() {
 
               <div className="space-y-6 text-base text-stone-600 leading-relaxed">
                 <p>
-                  In Japan, &ldquo;sixth industrialization&rdquo; refers to connecting primary
-                  production, secondary processing, and tertiary sales or services —
-                  1 × 2 × 3 = 6. The aim is to create new value from local resources.
+                  Farm to Market connects primary production, secondary processing and
+                  tertiary sales as one learning journey, moving between hands-on experience
+                  and study.
                 </p>
                 <p>
-                  At Sasabase, the work in the rice field, product planning, collaboration with
-                  processors, and selling are treated as parts of one connected challenge.
+                  The Japanese idea of &ldquo;sixth industrialization&rdquo; — 1 × 2 × 3 = 6 —
+                  is the concept behind this approach to learning.
                 </p>
                 <p>
-                  Which tasks participants can do in person depends on the season and the timing
-                  of the programme. At every stage, they consider how a local resource becomes
-                  something valuable, and who it is for.
+                  How does something grown in a field become a product, and who will it reach?
+                  Alongside practical work, participants research customers, consider costs
+                  and prices, and reflect on sales results.
                 </p>
                 <p>
-                  It is practical learning shaped with local people and connected to real economic activity.
+                  Working with local people and businesses, they try things, think them through
+                  and apply what they learn to the next attempt. This process helps them develop
+                  the ability to think for themselves, cooperate with others and take action.
                 </p>
               </div>
             </div>
